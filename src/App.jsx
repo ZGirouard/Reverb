@@ -1,25 +1,7 @@
-import Product from './components/Product/Product'
-import Button from './components/Button/Button'
-import Header from './components/Header/Header'
+import Products from './pageComponents/Products'
 
 function App() {
-  return (
-    <main>
-      <h1>Reverb</h1>
-      <Header />
-      <Product
-        imageSrc="https://via.placeholder.com/150"
-        imageAlt="Product Image"
-        reverbBump="Reverb Bump"
-        description="Item Label"
-        quality="Brand New"
-        price="$100"
-        showFreeShipping={true}
-        showReturnPolicy={true}
-      />
-      <Button>Button</Button>
-    </main>
-  )
+  return <Products />
 }
 
 export default App

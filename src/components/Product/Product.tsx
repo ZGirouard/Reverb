@@ -6,7 +6,7 @@ import Price from '../Price/Price'
 import ProductImage from '../ProductImage/ProductImage'
 import Quality from '../Quality/Quality'
 import ReverbBump from '../ReverbBump/ReverbBump'
-import { ImageWrap, Root, TagsRow } from './Product.styles'
+import { GreatValueTag, ImageWrap, Root, TagsRow } from './Product.styles'
 
 export type ProductProps = {
   imageSrc: string
@@ -17,6 +17,7 @@ export type ProductProps = {
   price: ReactNode
   showFreeShipping?: boolean
   showReturnPolicy?: boolean
+  showGreatValue?: boolean
   className?: string
   onFavoriteClick?: () => void
   favoriteAriaLabel?: string
@@ -31,11 +32,12 @@ export default function Product({
   price,
   showFreeShipping = false,
   showReturnPolicy = false,
+  showGreatValue = false,
   className,
   onFavoriteClick,
   favoriteAriaLabel,
 }: ProductProps) {
-  const showTags = showFreeShipping || showReturnPolicy
+  const showTags = showFreeShipping || showReturnPolicy || showGreatValue
 
   return (
     <Root className={className}>
@@ -51,6 +53,7 @@ export default function Product({
         <TagsRow>
           {showFreeShipping ? <IconLabel variant="freeShipping" /> : null}
           {showReturnPolicy ? <IconLabel variant="returnPolicy" /> : null}
+          {showGreatValue ? <GreatValueTag>Great Value</GreatValueTag> : null}
         </TagsRow>
       ) : null}
     </Root>
