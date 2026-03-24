@@ -4,7 +4,7 @@ import { colors } from '../../styles/colors'
 export const Root = styled.footer`
   box-sizing: border-box;
   width: 100%;
-  max-width: 848px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 `

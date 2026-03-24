@@ -6,7 +6,7 @@ export const Root = styled.header`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 848px;
+  max-width: 100%;
 `
 
 export const TopRow = styled.div`
