@@ -1,6 +1,7 @@
 import React from 'react'
 import BrowseGearSection from '../components/BrowseGearSection/BrowseGearSection'
 import Footer from '../components/Footer/Footer'
+import Pagination from '../components/Pagination/Pagination'
 import Header from '../components/Header/Header'
 import Product from '../components/Product/Product'
 import { products } from '../data/products'
@@ -26,6 +27,7 @@ export default function Products() {
           />
         ))}
       </List>
+      <Pagination />
       <BrowseGearSection />
       <Footer />
     </Page>
