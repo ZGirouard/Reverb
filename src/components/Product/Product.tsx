@@ -1,11 +1,12 @@
 import React, { type ReactNode } from 'react'
+import FavoriteButton from '../FavoriteButton/FavoriteButton'
 import IconLabel from '../IconLabel/IconLabel'
 import ItemLabel from '../ItemLabel/ItemLabel'
 import Price from '../Price/Price'
 import ProductImage from '../ProductImage/ProductImage'
 import Quality from '../Quality/Quality'
 import ReverbBump from '../ReverbBump/ReverbBump'
-import { Root, TagsRow } from './Product.styles'
+import { ImageWrap, Root, TagsRow } from './Product.styles'
 
 export type ProductProps = {
   imageSrc: string
@@ -17,6 +18,8 @@ export type ProductProps = {
   showFreeShipping?: boolean
   showReturnPolicy?: boolean
   className?: string
+  onFavoriteClick?: () => void
+  favoriteAriaLabel?: string
 }
 
 export default function Product({
@@ -29,12 +32,17 @@ export default function Product({
   showFreeShipping = false,
   showReturnPolicy = false,
   className,
+  onFavoriteClick,
+  favoriteAriaLabel,
 }: ProductProps) {
   const showTags = showFreeShipping || showReturnPolicy
 
   return (
     <Root className={className}>
-      <ProductImage src={imageSrc} alt={imageAlt} />
+      <ImageWrap>
+        <ProductImage src={imageSrc} alt={imageAlt} />
+        <FavoriteButton onClick={onFavoriteClick} aria-label={favoriteAriaLabel} />
+      </ImageWrap>
       {reverbBump != null ? <ReverbBump>{reverbBump}</ReverbBump> : null}
       <ItemLabel>{description}</ItemLabel>
       <Quality>{quality}</Quality>
