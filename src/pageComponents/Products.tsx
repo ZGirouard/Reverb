@@ -7,7 +7,8 @@ import Product from '../components/Product/Product'
 import ProductFiltersBar from '../components/ProductFiltersBar/ProductFiltersBar'
 import ResultsSummaryRow from '../components/ResultsSummaryRow/ResultsSummaryRow'
 import { products } from '../data/products'
-import { CategoryTitle, List, Page } from './Products.styles'
+import { CategoryTitle, List } from './Products.styles'
+import { Page } from './layout.styles'
 
 export default function Products() {
   return (
