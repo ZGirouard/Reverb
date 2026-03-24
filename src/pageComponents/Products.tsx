@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer'
 import Pagination from '../components/Pagination/Pagination'
 import Header from '../components/Header/Header'
 import Product from '../components/Product/Product'
+import ProductFiltersBar from '../components/ProductFiltersBar/ProductFiltersBar'
 import { products } from '../data/products'
 import { List, Page } from './Products.styles'
 
@@ -11,6 +12,7 @@ export default function Products() {
   return (
     <Page>
       <Header />
+      <ProductFiltersBar />
       <List>
         {products.map((item) => (
           <Product
