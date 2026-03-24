@@ -5,13 +5,16 @@ import Pagination from '../components/Pagination/Pagination'
 import Header from '../components/Header/Header'
 import Product from '../components/Product/Product'
 import ProductFiltersBar from '../components/ProductFiltersBar/ProductFiltersBar'
+import ResultsSummaryRow from '../components/ResultsSummaryRow/ResultsSummaryRow'
 import { products } from '../data/products'
-import { List, Page } from './Products.styles'
+import { CategoryTitle, List, Page } from './Products.styles'
 
 export default function Products() {
   return (
     <Page>
       <Header />
+      <CategoryTitle>Electric Guitars</CategoryTitle>
+      <ResultsSummaryRow />
       <ProductFiltersBar />
       <List>
         {products.map((item) => (

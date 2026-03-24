@@ -6,7 +6,7 @@ export const Row = styled.div`
   flex-wrap: nowrap;
   align-items: center;
   gap: 8px;
-  margin-top: 16px;
+  margin-top: 0;
   margin-bottom: 16px;
   overflow-x: auto;
 `

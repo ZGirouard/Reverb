@@ -8,6 +8,18 @@ export const Page = styled.main`
   padding: 0 16px 32px;
 `
 
+export const CategoryTitle = styled.h1`
+  margin: 16px 0 12px;
+  width: 100%;
+  text-align: left;
+  color: #000;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+`
+
 export const List = styled.div`
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
