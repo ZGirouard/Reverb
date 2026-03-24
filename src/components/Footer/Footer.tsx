@@ -1,4 +1,7 @@
 import React, { type ReactNode } from 'react'
+import { FooterBottomApp } from './FooterBottomApp'
+import FooterBottomLocale from './FooterBottomLocale'
+import { FooterBottomReverbGives } from './FooterBottomReverbGives'
 import { defaultFooterTopSlots } from './FooterTopNav'
 import {
   BottomSlot,
@@ -20,6 +23,14 @@ function padBottomSlots(nodes: ReactNode[] | undefined): ReactNode[] {
   return list.slice(0, 3)
 }
 
+function defaultFooterBottomSlots(): ReactNode[] {
+  return [
+    <FooterBottomLocale key="locale" />,
+    <FooterBottomReverbGives key="gives" />,
+    <FooterBottomApp key="app" />,
+  ]
+}
+
 export type FooterProps = {
   topSlots?: ReactNode[]
   bottomSlots?: ReactNode[]
@@ -28,7 +39,7 @@ export type FooterProps = {
 
 export default function Footer({ topSlots, bottomSlots, className }: FooterProps) {
   const top = padTopSlots(topSlots !== undefined ? topSlots : defaultFooterTopSlots())
-  const bottom = padBottomSlots(bottomSlots)
+  const bottom = padBottomSlots(bottomSlots !== undefined ? bottomSlots : defaultFooterBottomSlots())
 
   return (
     <Root className={className}>

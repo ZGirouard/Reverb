@@ -29,10 +29,14 @@ export const FooterBottom = styled.div`
   background: #121212;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 32px;
 `
 
 export const BottomSlot = styled.div`
   box-sizing: border-box;
+  display: flex;
   min-width: 0;
   height: 100%;
+  align-items: center;
+  padding: 16px;
 `

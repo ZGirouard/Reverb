@@ -134,3 +134,12 @@ export const NewsletterDisclaimer = styled.p`
   line-height: normal;
   white-space: pre-line;
 `
+
+export const FooterLegalLine = styled(NewsletterDisclaimer)`
+  max-width: none;
+  white-space: normal;
+`
+
+export const FooterBottomBlurb = styled(NewsletterDisclaimer)`
+  max-width: none;
+`
