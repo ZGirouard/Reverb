@@ -13,6 +13,7 @@ export const colors = {
   neutral350: '#cacaca',
   neutral300: '#d9d9d9',
   neutral200: '#ededed',
+  neutral150: '#efefef',
 
   accentReverb: '#c14e0b',
 
