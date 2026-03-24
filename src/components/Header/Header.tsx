@@ -1,9 +1,24 @@
 import React from 'react'
+import HeaderText from '../HeaderText/HeaderText'
 import IconLabelHeader from '../IconLabelHeader/IconLabelHeader'
 import SearchBox from '../SearchBox/SearchBox'
-import { Bar, Logo, SellGearButton } from './Header.styles'
+import { Divider, Logo, NavRow, Root, SellGearButton, TopRow } from './Header.styles'
 
 const logoSrc = '/reverbLogo.png'
+
+const NAV_LABELS = [
+  'The Reverb Outlet',
+  'Guitars',
+  'Pedals and Amplifiers',
+  'Keyboards & Synths',
+  'View All',
+  'Brands',
+  'News',
+  'Explore',
+  'Artists Shops',
+  'Reverb Gives',
+  'Help Center',
+] as const
 
 export type HeaderProps = {
   className?: string
@@ -15,14 +30,23 @@ export default function Header({
   searchPlaceholder = 'Search gear, brands, and more',
 }: HeaderProps) {
   return (
-    <Bar className={className}>
-      <Logo src={logoSrc} alt="Reverb" />
-      <SearchBox placeholder={searchPlaceholder} />
-      <SellGearButton type="button">Sell your gear</SellGearButton>
-      <IconLabelHeader variant="favorites" />
-      <IconLabelHeader variant="cart" />
-      <IconLabelHeader variant="notifications" />
-      <IconLabelHeader variant="menu" />
-    </Bar>
+    <Root className={className}>
+      <TopRow>
+        <Logo src={logoSrc} alt="Reverb" />
+        <SearchBox placeholder={searchPlaceholder} />
+        <SellGearButton type="button">Sell your gear</SellGearButton>
+        <IconLabelHeader variant="favorites" />
+        <IconLabelHeader variant="cart" />
+        <IconLabelHeader variant="notifications" />
+        <IconLabelHeader variant="menu" />
+      </TopRow>
+      <Divider aria-hidden />
+      <NavRow aria-label="Primary">
+        {NAV_LABELS.map((label) => (
+          <HeaderText key={label}>{label}</HeaderText>
+        ))}
+      </NavRow>
+      <Divider aria-hidden />
+    </Root>
   )
 }
