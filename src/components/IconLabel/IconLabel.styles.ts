@@ -1,5 +1,6 @@
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
+import { FONT_FAMILY } from '../../styles/tokens'
 
 export const root = css`
   display: inline-flex;
@@ -29,7 +30,7 @@ export const Label = styled.p`
   margin: 0;
   font-size: 11px;
   line-height: 1.25;
-  font-family: 'Inter', sans-serif;
+  font-family: ${FONT_FAMILY};
   font-weight: 600;
   color: #232323;
 `

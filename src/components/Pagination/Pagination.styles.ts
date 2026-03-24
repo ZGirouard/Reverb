@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Nav = styled.nav`
   display: flex;
@@ -14,16 +15,19 @@ export const List = styled.div`
   gap: 8px;
 `
 
-export const PageCircle = styled.button`
+const paginationFocus = `
+  &:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+  }
+`
+
+const PaginationControlButton = styled.button`
   box-sizing: border-box;
-  width: 30px;
-  height: 30px;
-  padding: 0;
   border: none;
-  border-radius: 50%;
   background: #d9d9d9;
   color: #000;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 12px;
   font-weight: 600;
   line-height: 1;
@@ -31,11 +35,14 @@ export const PageCircle = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  ${paginationFocus}
+`
 
-  &:focus-visible {
-    outline: 2px solid #000;
-    outline-offset: 2px;
-  }
+export const PageCircle = styled(PaginationControlButton)`
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
 `
 
 export const EllipsisCircle = styled.span`
@@ -45,7 +52,7 @@ export const EllipsisCircle = styled.span`
   border-radius: 50%;
   background: #d9d9d9;
   color: #000;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 12px;
   font-weight: 600;
   line-height: 30px;
@@ -54,25 +61,8 @@ export const EllipsisCircle = styled.span`
   user-select: none;
 `
 
-export const NextPill = styled.button`
-  box-sizing: border-box;
+export const NextPill = styled(PaginationControlButton)`
   height: 30px;
   padding: 0 14px;
-  border: none;
   border-radius: 18px;
-  background: #d9d9d9;
-  color: #000;
-  font-family: Inter, system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  &:focus-visible {
-    outline: 2px solid #000;
-    outline-offset: 2px;
-  }
 `

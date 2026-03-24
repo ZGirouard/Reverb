@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Row = styled.div`
   display: flex;
@@ -23,7 +24,7 @@ export const Left = styled.div`
 export const Title = styled.p`
   margin: 0;
   color: #000;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -33,7 +34,7 @@ export const Title = styled.p`
 export const Subtitle = styled.p`
   margin: 0;
   color: #959595;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 10px;
   font-style: normal;
   font-weight: 700;

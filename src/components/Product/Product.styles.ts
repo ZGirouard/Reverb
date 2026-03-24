@@ -1,12 +1,8 @@
 import styled from '@emotion/styled'
+import { CardColumnStack } from '../../styles/shared.styles'
+import { FONT_FAMILY } from '../../styles/tokens'
 
-export const Root = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 100%;
-  min-width: 0;
-`
+export const Root = styled(CardColumnStack)``
 
 export const ImageWrap = styled.div`
   position: relative;
@@ -23,7 +19,7 @@ export const TagsRow = styled.div`
 `
 
 export const GreatValueTag = styled.span`
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 11px;
   font-style: normal;
   font-weight: 600;

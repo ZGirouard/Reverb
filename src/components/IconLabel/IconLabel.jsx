@@ -15,11 +15,6 @@ const VARIANTS = {
   },
 }
 
-/**
- * @param {object} props
- * @param {'freeShipping' | 'returnPolicy'} props.variant
- * @param {string} [props.className]
- */
 export default function IconLabel({ variant, className }) {
   const config = VARIANTS[variant]
   if (!config) return null

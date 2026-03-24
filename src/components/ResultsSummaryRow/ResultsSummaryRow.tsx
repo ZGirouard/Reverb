@@ -1,5 +1,5 @@
 import React from 'react'
-import { Chip } from '../ProductFiltersBar/ProductFiltersBar.styles'
+import { FilterChip } from '../../styles/shared.styles'
 import { Left, Right, Row, Subtitle, Title } from './ResultsSummaryRow.styles'
 
 export type ResultsSummaryRowProps = {
@@ -14,7 +14,7 @@ export default function ResultsSummaryRow({ className }: ResultsSummaryRowProps)
         <Subtitle>Including Reverb Bump</Subtitle>
       </Left>
       <Right>
-        <Chip>Sort by: Most Recent First</Chip>
+        <FilterChip>Sort by: Most Recent First</FilterChip>
       </Right>
     </Row>
   )

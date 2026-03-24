@@ -113,7 +113,6 @@ export function FooterTopNavColumn5() {
   )
 }
 
-/** Default top row: four link columns + newsletter signup */
 export function defaultFooterTopSlots(): React.ReactNode[] {
   return [
     <FooterTopNavColumn1 key="c1" />,

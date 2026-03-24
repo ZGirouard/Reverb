@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Field = styled.div`
   position: relative;
@@ -21,7 +22,7 @@ export const Input = styled.input`
   background: transparent;
   outline: none;
   color: #000;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 11px;
   font-style: normal;
   font-weight: 600;
@@ -29,7 +30,7 @@ export const Input = styled.input`
 
   &::placeholder {
     color: #828282;
-    font-family: Inter, system-ui, sans-serif;
+    font-family: ${FONT_FAMILY};
     font-size: 11px;
     font-style: normal;
     font-weight: 600;

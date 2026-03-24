@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Column = styled.div`
   box-sizing: border-box;
@@ -20,7 +21,7 @@ export const Section = styled.section`
 export const SectionTitle = styled.h3`
   margin: 0;
   color: #fff;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 11px;
   font-style: normal;
   font-weight: 600;
@@ -43,7 +44,7 @@ export const LinkItem = styled.li`
 export const FooterLink = styled.a`
   margin: 0;
   color: #828282;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 8px;
   font-style: normal;
   font-weight: 600;
@@ -78,7 +79,7 @@ export const EmailField = styled.input`
   background: transparent;
   outline: none;
   color: #000;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 8px;
   font-style: normal;
   font-weight: 500;
@@ -110,7 +111,7 @@ export const SubscribeButton = styled.button`
   background: transparent;
   cursor: pointer;
   color: #000;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 8px;
   font-style: normal;
   font-weight: 700;
@@ -127,7 +128,7 @@ export const NewsletterDisclaimer = styled.p`
   margin: 0;
   max-width: 220px;
   color: #8e8e8e;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 8px;
   font-style: normal;
   font-weight: 500;

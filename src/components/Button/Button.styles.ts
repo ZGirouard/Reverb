@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Root = styled.button`
   box-sizing: border-box;
@@ -14,7 +15,7 @@ export const Root = styled.button`
   justify-content: center;
   cursor: pointer;
   color: #000;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 12px;
   font-style: normal;
   font-weight: 600;

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Chip, Row } from './ProductFiltersBar.styles'
+import { FilterChip } from '../../styles/shared.styles'
+import { Row } from './ProductFiltersBar.styles'
 
 const FILTER_LABELS = [
   'All Filters',
@@ -19,7 +20,7 @@ export default function ProductFiltersBar({ className }: ProductFiltersBarProps)
   return (
     <Row className={className}>
       {FILTER_LABELS.map((label) => (
-        <Chip key={label}>{label}</Chip>
+        <FilterChip key={label}>{label}</FilterChip>
       ))}
     </Row>
   )

@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { FONT_FAMILY } from '../../styles/tokens'
 import { Root as BaseButton } from '../Button/Button.styles'
 
 export const BottomAppColumn = styled.div`
@@ -92,7 +93,7 @@ export const LocaleSegment = styled.button`
   background: transparent;
   cursor: pointer;
   color: #fff;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 10px;
   font-style: normal;
   font-weight: 600;

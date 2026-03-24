@@ -1,12 +1,9 @@
 import styled from '@emotion/styled'
+import { coverImageBackground } from '../../styles/cssUtils'
+import { CardColumnStack } from '../../styles/shared.styles'
+import { FONT_FAMILY } from '../../styles/tokens'
 
-export const Root = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 100%;
-  min-width: 0;
-`
+export const Root = styled(CardColumnStack)``
 
 export const ImageFrame = styled.div<{ $imageSrc: string }>`
   width: 147px;
@@ -14,13 +11,13 @@ export const ImageFrame = styled.div<{ $imageSrc: string }>`
   aspect-ratio: 1 / 1;
   flex-shrink: 0;
   border-radius: 14px;
-  background: url(${({ $imageSrc }) => JSON.stringify($imageSrc)}) lightgray 50% / cover no-repeat;
+  background: ${({ $imageSrc }) => coverImageBackground($imageSrc)};
 `
 
 export const Meta = styled.p`
   margin: 0;
   color: #cacaca;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 9px;
   font-style: normal;
   font-weight: 700;
@@ -38,7 +35,7 @@ export const Stars = styled.span`
   display: inline-flex;
   gap: 1px;
   color: #000;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
@@ -48,7 +45,7 @@ export const Stars = styled.span`
 
 export const ReviewCount = styled.span`
   color: #000;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: ${FONT_FAMILY};
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
