@@ -13,5 +13,5 @@ export const List = styled.div`
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 8px;
   margin-top: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 `
