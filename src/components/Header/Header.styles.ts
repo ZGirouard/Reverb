@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { colors } from '../../styles/colors'
 import { Root as BaseButton } from '../Button/Button.styles'
 
 export const Root = styled.header`
@@ -37,7 +38,7 @@ export const Divider = styled.hr`
   height: 0;
   margin: 0;
   border: 0;
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid ${colors.neutral300};
 `
 
 export const NavRow = styled.nav`

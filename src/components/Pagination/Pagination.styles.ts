@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { colors } from '../../styles/colors'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Nav = styled.nav`
@@ -17,7 +18,7 @@ export const List = styled.div`
 
 const paginationFocus = `
   &:focus-visible {
-    outline: 2px solid #000;
+    outline: 2px solid ${colors.black};
     outline-offset: 2px;
   }
 `
@@ -25,8 +26,8 @@ const paginationFocus = `
 const PaginationControlButton = styled.button`
   box-sizing: border-box;
   border: none;
-  background: #d9d9d9;
-  color: #000;
+  background: ${colors.neutral300};
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
   font-size: 12px;
   font-weight: 600;
@@ -50,8 +51,8 @@ export const EllipsisCircle = styled.span`
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #d9d9d9;
-  color: #000;
+  background: ${colors.neutral300};
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
   font-size: 12px;
   font-weight: 600;

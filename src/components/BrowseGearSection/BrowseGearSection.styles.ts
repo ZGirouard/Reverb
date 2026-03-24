@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { colors } from '../../styles/colors'
 import { FiveColumnGrid } from '../../styles/shared.styles'
 import { FONT_FAMILY } from '../../styles/tokens'
 
@@ -9,7 +10,7 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
   margin: 0 0 16px;
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
   font-size: 20px;
   font-style: normal;

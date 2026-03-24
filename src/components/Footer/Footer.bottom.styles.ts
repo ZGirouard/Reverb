@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { colors } from '../../styles/colors'
 import { FONT_FAMILY } from '../../styles/tokens'
 import { Root as BaseButton } from '../Button/Button.styles'
 
@@ -25,7 +26,7 @@ export const SocialIconLink = styled.a`
   justify-content: center;
   width: 22px;
   height: 22px;
-  color: #fff;
+  color: ${colors.white};
   text-decoration: none;
 
   svg {
@@ -38,7 +39,7 @@ export const SocialIconLink = styled.a`
   }
 
   &:focus-visible {
-    outline: 2px solid #fff;
+    outline: 2px solid ${colors.white};
     outline-offset: 2px;
     border-radius: 2px;
   }
@@ -48,17 +49,17 @@ export const DownloadAppButton = styled(BaseButton)`
   width: auto;
   max-width: none;
   padding: 0 14px;
-  border: 1px solid #fff;
+  border: 1px solid ${colors.white};
   background: transparent;
-  color: #fff;
+  color: ${colors.white};
 
   &:focus-visible {
-    outline: 2px solid #fff;
+    outline: 2px solid ${colors.white};
     outline-offset: 2px;
   }
 
   &:hover {
-    background: rgba(255, 255, 255, 0.06);
+    background: ${colors.whiteAlpha06};
   }
 `
 
@@ -77,8 +78,8 @@ export const LocalePill = styled.div`
   width: 248px;
   height: 34px;
   border-radius: 32px;
-  border: 1px solid #fff;
-  background: rgba(217, 217, 217, 0);
+  border: 1px solid ${colors.white};
+  background: ${colors.transparentNeutral};
   overflow: hidden;
 `
 
@@ -92,7 +93,7 @@ export const LocaleSegment = styled.button`
   border: none;
   background: transparent;
   cursor: pointer;
-  color: #fff;
+  color: ${colors.white};
   font-family: ${FONT_FAMILY};
   font-size: 10px;
   font-style: normal;
@@ -103,7 +104,7 @@ export const LocaleSegment = styled.button`
   text-overflow: ellipsis;
 
   &:focus-visible {
-    outline: 2px solid #fff;
+    outline: 2px solid ${colors.white};
     outline-offset: -2px;
   }
 `
@@ -112,5 +113,5 @@ export const LocaleDivider = styled.span`
   flex-shrink: 0;
   width: 1px;
   height: 32px;
-  background: #fff;
+  background: ${colors.white};
 `

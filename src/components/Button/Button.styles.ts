@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { colors } from '../../styles/colors'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Root = styled.button`
@@ -7,14 +8,14 @@ export const Root = styled.button`
   height: 32px;
   padding: 0 10px;
   margin: 0;
-  border: 1px solid #000;
+  border: 1px solid ${colors.black};
   border-radius: 23px;
-  background: #fff;
+  background: ${colors.white};
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
   font-size: 12px;
   font-style: normal;
@@ -25,7 +26,7 @@ export const Root = styled.button`
   text-overflow: ellipsis;
 
   &:focus-visible {
-    outline: 2px solid #232323;
+    outline: 2px solid ${colors.neutral800};
     outline-offset: 2px;
   }
 

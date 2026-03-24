@@ -1,5 +1,6 @@
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
+import { colors } from '../../styles/colors'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const root = css`
@@ -16,7 +17,7 @@ export const IconContainer = styled.div`
 `
 
 export const IconWrap = styled.div`
-  color: #404040;
+  color: ${colors.neutral700};
 
   svg,
   img {
@@ -32,5 +33,5 @@ export const Label = styled.p`
   line-height: 1.25;
   font-family: ${FONT_FAMILY};
   font-weight: 600;
-  color: #232323;
+  color: ${colors.neutral800};
 `

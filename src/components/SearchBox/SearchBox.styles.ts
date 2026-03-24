@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { colors } from '../../styles/colors'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Field = styled.div`
@@ -7,8 +8,8 @@ export const Field = styled.div`
   width: 376px;
   height: 35px;
   border-radius: 10px;
-  border: 1px solid #000;
-  background: rgba(217, 217, 217, 0);
+  border: 1px solid ${colors.black};
+  background: ${colors.transparentNeutral};
 `
 
 export const Input = styled.input`
@@ -21,7 +22,7 @@ export const Input = styled.input`
   border-radius: 9px;
   background: transparent;
   outline: none;
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
   font-size: 11px;
   font-style: normal;
@@ -29,7 +30,7 @@ export const Input = styled.input`
   line-height: normal;
 
   &::placeholder {
-    color: #828282;
+    color: ${colors.neutral600};
     font-family: ${FONT_FAMILY};
     font-size: 11px;
     font-style: normal;

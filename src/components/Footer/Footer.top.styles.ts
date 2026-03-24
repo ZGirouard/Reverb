@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { colors } from '../../styles/colors'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Column = styled.div`
@@ -20,7 +21,7 @@ export const Section = styled.section`
 
 export const SectionTitle = styled.h3`
   margin: 0;
-  color: #fff;
+  color: ${colors.white};
   font-family: ${FONT_FAMILY};
   font-size: 11px;
   font-style: normal;
@@ -43,7 +44,7 @@ export const LinkItem = styled.li`
 
 export const FooterLink = styled.a`
   margin: 0;
-  color: #828282;
+  color: ${colors.neutral600};
   font-family: ${FONT_FAMILY};
   font-size: 8px;
   font-style: normal;
@@ -52,7 +53,7 @@ export const FooterLink = styled.a`
   text-decoration: none;
 
   &:hover {
-    color: #fff;
+    color: ${colors.white};
   }
 `
 
@@ -64,7 +65,7 @@ export const SubscribeBar = styled.div`
   width: 160px;
   height: 30px;
   border-radius: 6px;
-  background: #fff;
+  background: ${colors.white};
   overflow: hidden;
 `
 
@@ -78,7 +79,7 @@ export const EmailField = styled.input`
   border: none;
   background: transparent;
   outline: none;
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
   font-size: 8px;
   font-style: normal;
@@ -86,7 +87,7 @@ export const EmailField = styled.input`
   line-height: normal;
 
   &::placeholder {
-    color: #8e8e8e;
+    color: ${colors.neutral550};
     opacity: 1;
   }
 
@@ -99,7 +100,7 @@ export const SubscribeBarDivider = styled.span`
   flex-shrink: 0;
   align-self: stretch;
   width: 1px;
-  background: #a6a6a6;
+  background: ${colors.neutral400};
 `
 
 export const SubscribeButton = styled.button`
@@ -110,7 +111,7 @@ export const SubscribeButton = styled.button`
   border: none;
   background: transparent;
   cursor: pointer;
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
   font-size: 8px;
   font-style: normal;
@@ -119,7 +120,7 @@ export const SubscribeButton = styled.button`
   white-space: nowrap;
 
   &:focus-visible {
-    outline: 2px solid #fff;
+    outline: 2px solid ${colors.white};
     outline-offset: -2px;
   }
 `
@@ -127,7 +128,7 @@ export const SubscribeButton = styled.button`
 export const NewsletterDisclaimer = styled.p`
   margin: 0;
   max-width: 220px;
-  color: #8e8e8e;
+  color: ${colors.neutral550};
   font-family: ${FONT_FAMILY};
   font-size: 8px;
   font-style: normal;

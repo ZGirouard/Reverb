@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { colors } from '../../styles/colors'
 import { coverImageBackground } from '../../styles/cssUtils'
 import { CardColumnStack } from '../../styles/shared.styles'
 import { FONT_FAMILY } from '../../styles/tokens'
@@ -16,7 +17,7 @@ export const ImageFrame = styled.div<{ $imageSrc: string }>`
 
 export const Meta = styled.p`
   margin: 0;
-  color: #cacaca;
+  color: ${colors.neutral350};
   font-family: ${FONT_FAMILY};
   font-size: 9px;
   font-style: normal;
@@ -34,7 +35,7 @@ export const RatingRow = styled.div`
 export const Stars = styled.span`
   display: inline-flex;
   gap: 1px;
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
   font-size: 10px;
   font-style: normal;
@@ -44,7 +45,7 @@ export const Stars = styled.span`
 `
 
 export const ReviewCount = styled.span`
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
   font-size: 10px;
   font-style: normal;

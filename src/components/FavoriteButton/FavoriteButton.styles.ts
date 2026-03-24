@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { colors } from '../../styles/colors'
 
 export const Button = styled.button`
   position: absolute;
@@ -10,14 +11,14 @@ export const Button = styled.button`
   padding: 0;
   border: none;
   border-radius: 50%;
-  background: #fff;
+  background: ${colors.white};
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 
   &:focus-visible {
-    outline: 2px solid #232323;
+    outline: 2px solid ${colors.neutral800};
     outline-offset: 2px;
   }
 

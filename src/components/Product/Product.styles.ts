@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { colors } from '../../styles/colors'
 import { CardColumnStack } from '../../styles/shared.styles'
 import { FONT_FAMILY } from '../../styles/tokens'
 
@@ -24,5 +25,5 @@ export const GreatValueTag = styled.span`
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  color: #232323;
+  color: ${colors.neutral800};
 `
