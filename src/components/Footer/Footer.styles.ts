@@ -20,7 +20,7 @@ export const TopSlot = styled.div`
   box-sizing: border-box;
   min-width: 0;
   height: 100%;
-  padding: 16px 10px;
+  padding: 16px 16px;
 `
 
 export const FooterBottom = styled.div`
@@ -35,5 +35,4 @@ export const BottomSlot = styled.div`
   box-sizing: border-box;
   min-width: 0;
   height: 100%;
-
 `

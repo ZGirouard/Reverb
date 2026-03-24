@@ -1,12 +1,19 @@
 import React from 'react'
 import {
   Column,
+  EmailField,
   FooterLink,
   LinkItem,
   LinkList,
+  NewsletterDisclaimer,
   Section,
   SectionTitle,
+  SubscribeBar,
+  SubscribeBarDivider,
+  SubscribeButton,
 } from './Footer.top.styles'
+
+const NEWSLETTER_DISCLAIMER = `By clicking Subscribe, I agree to receive exclusive offers & promotions, news & reviews, and personalized tips for buying and selling on Reverb.`
 
 function links(items: string[]) {
   return (
@@ -89,13 +96,30 @@ export function FooterTopNavColumn4() {
   )
 }
 
-/** Default top row: four link columns + one empty slot */
+export function FooterTopNavColumn5() {
+  return (
+    <section aria-label="Email newsletter signup">
+      <Section style={{ marginLeft: '-32px' }}>
+        <SectionTitle>Get the Best of Reverb in Your
+        Inbox</SectionTitle>
+        <SubscribeBar>
+          <EmailField type="email" name="footer-email" placeholder="Your Email" autoComplete="email" />
+          <SubscribeBarDivider aria-hidden />
+          <SubscribeButton type="button">Subscribe</SubscribeButton>
+        </SubscribeBar>
+        <NewsletterDisclaimer>{NEWSLETTER_DISCLAIMER}</NewsletterDisclaimer>
+      </Section>
+    </section>
+  )
+}
+
+/** Default top row: four link columns + newsletter signup */
 export function defaultFooterTopSlots(): React.ReactNode[] {
   return [
     <FooterTopNavColumn1 key="c1" />,
     <FooterTopNavColumn2 key="c2" />,
     <FooterTopNavColumn3 key="c3" />,
     <FooterTopNavColumn4 key="c4" />,
-    null,
+    <FooterTopNavColumn5 key="c5" />,
   ]
 }
