@@ -1,5 +1,6 @@
 import React from 'react'
 import HeaderText from '../HeaderText/HeaderText'
+import { HeaderTextLink } from '../HeaderText/HeaderText.styles'
 import IconLabelHeader from '../IconLabelHeader/IconLabelHeader'
 import SearchBox from '../SearchBox/SearchBox'
 import { Divider, Logo, NavRow, Root, SellGearButton, TopRow } from './Header.styles'
@@ -42,9 +43,15 @@ export default function Header({
       </TopRow>
       <Divider aria-hidden />
       <NavRow aria-label="Primary">
-        {NAV_LABELS.map((label) => (
-          <HeaderText key={label}>{label}</HeaderText>
-        ))}
+        {NAV_LABELS.map((label) =>
+          label === 'Guitars' ? (
+            <HeaderTextLink key={label} to="/products">
+              {label}
+            </HeaderTextLink>
+          ) : (
+            <HeaderText key={label}>{label}</HeaderText>
+          ),
+        )}
       </NavRow>
       <Divider aria-hidden />
     </Root>
