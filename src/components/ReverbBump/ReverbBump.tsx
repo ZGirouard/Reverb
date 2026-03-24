@@ -1,7 +1,8 @@
-import React, { type ComponentProps } from 'react'
+import React from 'react'
+import type { OptionalClassNameProps } from '../../types/emotionWrappers'
 import { ReverbBumpParagraph } from './ReverbBump.styles'
 
-type ReverbBumpProps = ComponentProps<typeof ReverbBumpParagraph>
+type ReverbBumpProps = OptionalClassNameProps<typeof ReverbBumpParagraph>
 
 export default function ReverbBump({ children, className, ...rest }: ReverbBumpProps) {
   return (

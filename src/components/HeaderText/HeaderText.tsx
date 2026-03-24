@@ -1,7 +1,8 @@
-import React, { type ComponentProps } from 'react'
+import React from 'react'
+import type { OptionalClassNameProps } from '../../types/emotionWrappers'
 import { HeaderTextParagraph } from './HeaderText.styles'
 
-type HeaderTextProps = ComponentProps<typeof HeaderTextParagraph>
+type HeaderTextProps = OptionalClassNameProps<typeof HeaderTextParagraph>
 
 export default function HeaderText({ children, className, ...rest }: HeaderTextProps) {
   return (

@@ -1,7 +1,8 @@
-import React, { type ComponentProps } from 'react'
+import React from 'react'
+import type { OptionalClassNameProps } from '../../types/emotionWrappers'
 import { ItemLabelParagraph } from './ItemLabel.styles'
 
-type ItemLabelProps = ComponentProps<typeof ItemLabelParagraph>
+type ItemLabelProps = OptionalClassNameProps<typeof ItemLabelParagraph>
 
 export default function ItemLabel({ children, className, ...rest }: ItemLabelProps) {
   return (
