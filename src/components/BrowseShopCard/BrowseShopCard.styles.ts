@@ -42,7 +42,6 @@ export const Stars = styled.span`
   font-style: normal;
   font-weight: ${fontWeight.bold};
   line-height: ${lineHeight.normal};
-  letter-spacing: -0.02em;
 `
 
 export const ReviewCount = styled.span`

@@ -42,16 +42,16 @@ export function FooterBottomApp() {
   return (
     <BottomAppColumn>
       <SocialRow>
-        <SocialIconLink href="#" aria-label="Facebook">
+        <SocialIconLink href="#">
           <IconFacebook />
         </SocialIconLink>
-        <SocialIconLink href="#" aria-label="Instagram">
+        <SocialIconLink href="#">
           <IconInstagram />
         </SocialIconLink>
-        <SocialIconLink href="#" aria-label="X">
+        <SocialIconLink href="#">
           <IconX />
         </SocialIconLink>
-        <SocialIconLink href="#" aria-label="YouTube">
+        <SocialIconLink href="#">
           <IconYouTube />
         </SocialIconLink>
       </SocialRow>

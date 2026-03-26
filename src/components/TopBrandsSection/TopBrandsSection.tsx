@@ -6,7 +6,7 @@ const TILE_COUNT = 6
 
 export default function TopBrandsSection() {
   return (
-    <Section aria-labelledby="top-brands-heading">
+    <Section>
       <Title id="top-brands-heading">Save on gear from top brands</Title>
       <Grid>
         {Array.from({ length: TILE_COUNT }, (_, i) => (

@@ -26,7 +26,7 @@ on the gear you want.`
 
 export default function ScanDownloadBanner() {
   return (
-    <Section aria-label="Download the Reverb app">
+    <Section>
       <Band>
         <LeftQuarter>
           <WhiteCard>

@@ -20,7 +20,7 @@ export default function HotDealsSection() {
   }, [])
 
   return (
-    <Section aria-labelledby="hot-deals-heading">
+    <Section>
       <Title id="hot-deals-heading">Hot Deals on Gear You&apos;ll Love</Title>
       <Row>
         {items.map((item) => (

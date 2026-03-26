@@ -23,7 +23,6 @@ export type RecentSearchCardProps = {
   leftImageAlt?: string
   rightImageAlt?: string
   onFavoriteClick?: () => void
-  favoriteAriaLabel?: string
 }
 
 export default function RecentSearchCard({
@@ -34,7 +33,6 @@ export default function RecentSearchCard({
   leftImageAlt,
   rightImageAlt,
   onFavoriteClick,
-  favoriteAriaLabel,
 }: RecentSearchCardProps) {
   return (
     <Root>
@@ -48,20 +46,12 @@ export default function RecentSearchCard({
             </Subtitle>
           </HeaderText>
         </HeaderMain>
-        <HeaderFavorite onClick={onFavoriteClick} aria-label={favoriteAriaLabel} />
+        <HeaderFavorite onClick={onFavoriteClick} />
       </Header>
       <ImageRow>
-        <ThumbLeft
-          $imageSrc={leftImageSrc}
-          role={leftImageAlt != null && leftImageAlt !== '' ? 'img' : undefined}
-          aria-label={leftImageAlt != null && leftImageAlt !== '' ? leftImageAlt : undefined}
-        />
+        <ThumbLeft $imageSrc={leftImageSrc} />
         <ThumbDivider aria-hidden />
-        <ThumbRight
-          $imageSrc={rightImageSrc}
-          role={rightImageAlt != null && rightImageAlt !== '' ? 'img' : undefined}
-          aria-label={rightImageAlt != null && rightImageAlt !== '' ? rightImageAlt : undefined}
-        />
+        <ThumbRight $imageSrc={rightImageSrc} />
       </ImageRow>
     </Root>
   )

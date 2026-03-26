@@ -34,7 +34,7 @@ const BENEFITS = [
 
 export default function SellGearSection() {
   return (
-    <Section aria-label="Sell your gear">
+    <Section>
       <Inner style={{ alignItems: 'center' }}>
         <Left>
           <SectionTitle>{`Sell to fund your\nnext purchase`}</SectionTitle>

@@ -28,7 +28,7 @@ export default function MostWatchedElectricGuitarsSection() {
   }, [])
 
   return (
-    <Section aria-labelledby="most-watched-electric-heading">
+    <Section>
       <Title id="most-watched-electric-heading">Most Watched in Electric Guitars</Title>
       <Row>
         <QuadGrid>

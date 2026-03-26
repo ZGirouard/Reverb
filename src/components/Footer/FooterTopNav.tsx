@@ -30,7 +30,7 @@ function links(items: string[]) {
 
 export function FooterTopNavColumn1() {
   return (
-    <nav aria-label="Shop gear">
+    <nav>
       <Section>
         <SectionTitle>Shop Gear</SectionTitle>
         {links([
@@ -50,13 +50,13 @@ export function FooterTopNavColumn1() {
 export function FooterTopNavColumn2() {
   return (
     <Column>
-      <nav aria-label="Sell on Reverb">
+      <nav>
         <Section>
           <SectionTitle>Sell on Reverb</SectionTitle>
           {links(['Seller Hub', 'Reverb Payments FAQ'])}
         </Section>
       </nav>
-      <nav aria-label="Resources">
+      <nav>
         <Section>
           <SectionTitle>Resources</SectionTitle>
           {links(['Reverb News', 'Price Guide', 'Buying Guide', 'Gift Cards'])}
@@ -68,7 +68,7 @@ export function FooterTopNavColumn2() {
 
 export function FooterTopNavColumn3() {
   return (
-    <nav aria-label="Help and tools">
+    <nav>
       <Section>
         <SectionTitle>Help & Tools</SectionTitle>
         {links([
@@ -88,7 +88,7 @@ export function FooterTopNavColumn3() {
 
 export function FooterTopNavColumn4() {
   return (
-    <nav aria-label="Company">
+    <nav>
       <Section>
         <SectionTitle>Company</SectionTitle>
         {links(['About Reverb', 'Careers', 'Press', 'Reverb Gives', 'Trust & Safety'])}
@@ -99,7 +99,7 @@ export function FooterTopNavColumn4() {
 
 export function FooterTopNavColumn5() {
   return (
-    <section aria-label="Email newsletter signup">
+    <section>
       <Section style={{ marginLeft: `-${space[32]}` }}>
         <SectionTitle>Get the Best of Reverb in Your
         Inbox</SectionTitle>

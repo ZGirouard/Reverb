@@ -42,7 +42,7 @@ export default function Header({
         <IconLabelHeader variant="menu" />
       </TopRow>
       <Divider aria-hidden />
-      <NavRow aria-label="Primary">
+      <NavRow>
         {NAV_LABELS.map((label) =>
           label === 'Guitars' ? (
             <HeaderTextLink key={label} to="/products">

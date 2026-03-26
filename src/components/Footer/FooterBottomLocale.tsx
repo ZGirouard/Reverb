@@ -5,7 +5,7 @@ import { BottomFirstColumn, LocaleDivider, LocalePill, LocaleSegment } from './F
 export default function FooterBottomLocale() {
   return (
     <BottomFirstColumn>
-      <LocalePill role="group" aria-label="Region, language, and currency">
+      <LocalePill>
         <LocaleSegment type="button">Continental U.S.</LocaleSegment>
         <LocaleDivider aria-hidden />
         <LocaleSegment type="button">English</LocaleSegment>

@@ -33,7 +33,7 @@ const ENTRIES = [
 
 export default function YourRecentSearchesSection() {
   return (
-    <Section aria-labelledby="your-recent-searches-heading">
+    <Section>
       <Title id="your-recent-searches-heading">Your Recent Searches</Title>
       <Columns>
         {ENTRIES.map((entry) => (
@@ -45,7 +45,6 @@ export default function YourRecentSearchesSection() {
             rightImageSrc={entry.rightImageSrc}
             leftImageAlt={entry.leftImageAlt}
             rightImageAlt={entry.rightImageAlt}
-            favoriteAriaLabel={`Save search ${entry.searchTitle}`}
           />
         ))}
       </Columns>

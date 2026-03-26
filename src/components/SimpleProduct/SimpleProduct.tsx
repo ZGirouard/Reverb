@@ -11,11 +11,7 @@ export type SimpleProductProps = {
 export default function SimpleProduct({ imageSrc, imageAlt, caption, className }: SimpleProductProps) {
   return (
     <Root className={className}>
-      <ImageArea
-        $imageSrc={imageSrc}
-        role={imageAlt != null && imageAlt !== '' ? 'img' : undefined}
-        aria-label={imageAlt != null && imageAlt !== '' ? imageAlt : undefined}
-      />
+      <ImageArea $imageSrc={imageSrc} />
       <Caption>
         {typeof caption === 'string' ? <CaptionText>{caption}</CaptionText> : caption}
       </Caption>

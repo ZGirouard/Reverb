@@ -19,7 +19,6 @@ export type SmallProductCardProps = {
   className?: string
   size?: CardSize
   onFavoriteClick?: () => void
-  favoriteAriaLabel?: string
 }
 
 export default function SmallProductCard({
@@ -30,17 +29,11 @@ export default function SmallProductCard({
   className,
   size = 'default',
   onFavoriteClick,
-  favoriteAriaLabel,
 }: SmallProductCardProps) {
   return (
     <Root className={className} $size={size}>
-      <ImageArea
-        $imageSrc={imageSrc}
-        $size={size}
-        role={imageAlt != null && imageAlt !== '' ? 'img' : undefined}
-        aria-label={imageAlt != null && imageAlt !== '' ? imageAlt : undefined}
-      />
-      <FavoriteTopRight $size={size} onClick={onFavoriteClick} aria-label={favoriteAriaLabel} />
+      <ImageArea $imageSrc={imageSrc} $size={size} />
+      <FavoriteTopRight $size={size} onClick={onFavoriteClick} />
       <NameOverlay $size={size}>
         <NamePlate $size={size}>
           <PillStack>

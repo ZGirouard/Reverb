@@ -10,7 +10,7 @@ export default function RecentlyViewedSection() {
   const items = useMemo(() => sampleRandom(products, PICK_COUNT), [])
 
   return (
-    <Section aria-labelledby="recently-viewed-heading">
+    <Section>
       <Title id="recently-viewed-heading">Based on your recently viewed</Title>
       <Grid>
         {items.map((item) => (

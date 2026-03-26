@@ -16,23 +16,17 @@ import {
 export type HotDealProductCardProps = {
   product: ProductListing & { wasPrice: string; priceDropLabel: string }
   onFavoriteClick?: () => void
-  favoriteAriaLabel?: string
 }
 
 export default function HotDealProductCard({
   product,
   onFavoriteClick,
-  favoriteAriaLabel,
 }: HotDealProductCardProps) {
   return (
     <Root>
       <ImageBlock>
-        <ImageArea
-          $imageSrc={product.imageSrc}
-          role={product.imageAlt !== '' ? 'img' : undefined}
-          aria-label={product.imageAlt !== '' ? product.imageAlt : undefined}
-        />
-        <FavoriteTopRight onClick={onFavoriteClick} aria-label={favoriteAriaLabel} />
+        <ImageArea $imageSrc={product.imageSrc} />
+        <FavoriteTopRight onClick={onFavoriteClick} />
       </ImageBlock>
       <PriceDropBadge>PRICE DROP</PriceDropBadge>
       <ProductTitle>{product.description}</ProductTitle>

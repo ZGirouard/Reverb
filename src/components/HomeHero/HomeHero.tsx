@@ -33,7 +33,7 @@ const HERO_PRODUCTS = [
 
 export default function HomeHero() {
   return (
-    <Section aria-label="Join Reverb">
+    <Section>
       <Inner style={{ alignItems: 'center' }}>
         <Left>
           <Title>{`Reverb’s better\nwhen you join in.`}</Title>

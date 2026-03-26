@@ -10,12 +10,6 @@ export type ProductImageProps = Omit<FrameProps, '$imageSrc'> & {
 
 export default function ProductImage({ src, alt, className, ...rest }: ProductImageProps) {
   return (
-    <Frame
-      $imageSrc={src}
-      className={className}
-      role={alt != null && alt !== '' ? 'img' : undefined}
-      aria-label={alt != null && alt !== '' ? alt : undefined}
-      {...rest}
-    />
+    <Frame $imageSrc={src} className={className} {...rest} />
   )
 }

@@ -10,7 +10,7 @@ export type PaginationProps = {
 
 export default function Pagination({ pageNumbers = DEFAULT_PAGE_NUMBERS, className }: PaginationProps) {
   return (
-    <Nav className={className} aria-label="Pagination">
+    <Nav className={className}>
       <List>
         {pageNumbers.map((n) => (
           <PageCircle key={n} type="button">

@@ -11,7 +11,7 @@ export default function JustListedSection() {
   const items = useMemo(() => sampleRandom(products, PICK_COUNT), [])
 
   return (
-    <Section aria-labelledby="just-listed-heading">
+    <Section>
       <Title id="just-listed-heading">Just listed</Title>
       <Grid>
         {items.map((item) => (

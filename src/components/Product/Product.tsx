@@ -20,7 +20,6 @@ export type ProductProps = {
   showGreatValue?: boolean
   className?: string
   onFavoriteClick?: () => void
-  favoriteAriaLabel?: string
 }
 
 export default function Product({
@@ -35,7 +34,6 @@ export default function Product({
   showGreatValue = false,
   className,
   onFavoriteClick,
-  favoriteAriaLabel,
 }: ProductProps) {
   const showTags = showFreeShipping || showReturnPolicy || showGreatValue
 
@@ -43,7 +41,7 @@ export default function Product({
     <Root className={className}>
       <ImageWrap>
         <ProductImage src={imageSrc} alt={imageAlt} />
-        <FavoriteButton onClick={onFavoriteClick} aria-label={favoriteAriaLabel} />
+        <FavoriteButton onClick={onFavoriteClick} />
       </ImageWrap>
       {reverbBump != null ? <ReverbBump>{reverbBump}</ReverbBump> : null}
       <ItemLabel>{description}</ItemLabel>

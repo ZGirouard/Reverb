@@ -6,7 +6,7 @@ make music.`
 
 export function FooterBottomReverbGives() {
   return (
-    <Section aria-label="Reverb Gives">
+    <Section>
       <SectionTitle>Reverb Gives</SectionTitle>
       <FooterBottomBlurb>{COPY}</FooterBottomBlurb>
     </Section>

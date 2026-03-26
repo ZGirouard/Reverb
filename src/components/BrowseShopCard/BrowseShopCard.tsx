@@ -1,4 +1,3 @@
-import React from 'react'
 import ItemLabel from '../ItemLabel/ItemLabel'
 import { ImageFrame, Meta, RatingRow, ReviewCount, Root, Stars } from './BrowseShopCard.styles'
 
@@ -33,15 +32,11 @@ export default function BrowseShopCard({
 
   return (
     <Root className={className}>
-      <ImageFrame
-        $imageSrc={imageSrc}
-        role={imageAlt != null && imageAlt !== '' ? 'img' : undefined}
-        aria-label={imageAlt != null && imageAlt !== '' ? imageAlt : undefined}
-      />
+      <ImageFrame $imageSrc={imageSrc} />
       <ItemLabel>{title}</ItemLabel>
       <Meta>{metaLine}</Meta>
       <RatingRow>
-        <Stars aria-label={`${starCount} out of 5 stars`}>{stars}</Stars>
+        <Stars>{stars}</Stars>
         <ReviewCount>({formatReviewCount(reviewCount)})</ReviewCount>
       </RatingRow>
     </Root>

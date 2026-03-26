@@ -11,7 +11,7 @@ const CATEGORIES = [
 
 export default function BrowseByCategorySection() {
   return (
-    <Section aria-labelledby="browse-by-category-heading">
+    <Section>
       <Title id="browse-by-category-heading">Browse by Category</Title>
       <Row>
         {CATEGORIES.map((item) => (

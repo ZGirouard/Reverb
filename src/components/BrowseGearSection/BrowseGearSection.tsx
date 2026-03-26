@@ -5,7 +5,7 @@ import { Grid, Section, Title } from './BrowseGearSection.styles'
 
 export default function BrowseGearSection() {
   return (
-    <Section aria-labelledby="browse-gear-heading">
+    <Section>
       <Title id="browse-gear-heading">Browse More Gear from Top Shops</Title>
       <Grid>
         {browseShops.map((shop) => (
