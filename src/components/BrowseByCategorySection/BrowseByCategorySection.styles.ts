@@ -1,29 +1,16 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { FlexWrapRow, HomeSection, HomeSectionTitle } from '../../styles/shared.styles'
 import { space } from '../../styles/spacing'
 import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
-export const Section = styled.section`
-  margin-top: ${space[8]};
-  margin-bottom: ${space[24]};
-`
+export const Section = HomeSection
 
-export const Title = styled.h2`
-  margin: 0 0 ${space[16]};
-  color: ${colors.black};
-  font-family: ${FONT_FAMILY};
-  font-size: ${fontSize.titleSm};
-  font-style: normal;
-  font-weight: ${fontWeight.bold};
-  line-height: ${lineHeight.normal};
+export const Title = styled(HomeSectionTitle)`
   text-align: left;
 `
 
-export const Row = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: ${space[16]};
+export const Row = styled(FlexWrapRow)`
   align-items: flex-start;
   justify-content: center;
 `

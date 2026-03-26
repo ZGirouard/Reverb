@@ -2,8 +2,7 @@ import React, { useMemo } from 'react'
 import type { ProductListing } from '../../data/products'
 import { products } from '../../data/products'
 import Product from '../Product/Product'
-import { Title } from '../TopBrandsSection/TopBrandsSection.styles'
-import { Grid, Section } from './RecentlyViewedSection.styles'
+import { Grid, Section, Title } from './RecentlyViewedSection.styles'
 
 const PICK_COUNT = 6
 

@@ -1,22 +1,5 @@
-import styled from '@emotion/styled'
-import { colors } from '../../styles/colors'
-import { FiveColumnGrid } from '../../styles/shared.styles'
-import { space } from '../../styles/spacing'
-import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
+import { FiveColumnGrid, HomeSectionLoose, HomeSectionTitle } from '../../styles/shared.styles'
 
-export const Section = styled.section`
-  margin-top: ${space[16]};
-  margin-bottom: ${space[32]};
-`
-
-export const Title = styled.h2`
-  margin: 0 0 ${space[16]};
-  color: ${colors.black};
-  font-family: ${FONT_FAMILY};
-  font-size: ${fontSize.titleSm};
-  font-style: normal;
-  font-weight: ${fontWeight.bold};
-  line-height: ${lineHeight.normal};
-`
-
-export const Grid = styled(FiveColumnGrid)``
+export const Section = HomeSectionLoose
+export const Title = HomeSectionTitle
+export const Grid = FiveColumnGrid

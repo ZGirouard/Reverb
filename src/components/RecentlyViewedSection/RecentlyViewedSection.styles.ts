@@ -1,10 +1,9 @@
 import styled from '@emotion/styled'
+import { HomeSection, HomeSectionTitle } from '../../styles/shared.styles'
 import { space } from '../../styles/spacing'
 
-export const Section = styled.section`
-  margin-top: ${space[8]};
-  margin-bottom: ${space[24]};
-`
+export const Section = HomeSection
+export const Title = HomeSectionTitle
 
 export const Grid = styled.div`
   display: grid;

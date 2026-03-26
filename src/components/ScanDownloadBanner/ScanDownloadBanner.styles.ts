@@ -1,12 +1,10 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { HomeSection } from '../../styles/shared.styles'
 import { space } from '../../styles/spacing'
 import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
-export const Section = styled.section`
-  margin-top: ${space[8]};
-  margin-bottom: ${space[24]};
-`
+export const Section = HomeSection
 
 export const Band = styled.div`
   box-sizing: border-box;

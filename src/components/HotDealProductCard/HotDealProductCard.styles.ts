@@ -1,12 +1,11 @@
 import styled from '@emotion/styled'
 import FavoriteButton from '../FavoriteButton/FavoriteButton'
 import { colors } from '../../styles/colors'
-import { coverImageBackground } from '../../styles/cssUtils'
+import { productCardDims, ProductCardThumbImageArea } from '../../styles/productCardPrimitives'
 import { space } from '../../styles/spacing'
 import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
-const card = 146
-const imgR = 14
+const { card } = productCardDims.default
 
 export const Root = styled.article`
   box-sizing: border-box;
@@ -25,13 +24,7 @@ export const ImageBlock = styled.div`
   flex-shrink: 0;
 `
 
-export const ImageArea = styled.div<{ $imageSrc: string }>`
-  width: ${card}px;
-  height: ${card}px;
-  aspect-ratio: 1 / 1;
-  border-radius: ${imgR}px;
-  background: ${({ $imageSrc }) => coverImageBackground($imageSrc)};
-`
+export const ImageArea = ProductCardThumbImageArea
 
 export const FavoriteTopRight = styled(FavoriteButton)`
   position: absolute;

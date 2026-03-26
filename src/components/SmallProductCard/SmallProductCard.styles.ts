@@ -1,32 +1,25 @@
 import styled from '@emotion/styled'
 import FavoriteButton from '../FavoriteButton/FavoriteButton'
 import { colors } from '../../styles/colors'
-import { coverImageBackground } from '../../styles/cssUtils'
+import {
+  productCardDims,
+  ProductCardThumbImageArea,
+  type ProductCardSize,
+} from '../../styles/productCardPrimitives'
 import { space } from '../../styles/spacing'
 import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
-export type CardSize = 'default' | 'large'
-
-const DIM: Record<CardSize, { card: number; plateW: number; plateH: number; imgR: number; plateR: number }> = {
-  default: { card: 146, plateW: 122, plateH: 44, imgR: 14, plateR: 15 },
-  large: { card: 300, plateW: 251, plateH: 90, imgR: 29, plateR: 31 },
-}
+export type CardSize = ProductCardSize
 
 export const Root = styled.article<{ $size: CardSize }>`
   position: relative;
-  width: ${({ $size }) => DIM[$size].card}px;
-  height: ${({ $size }) => DIM[$size].card}px;
+  width: ${({ $size }) => productCardDims[$size].card}px;
+  height: ${({ $size }) => productCardDims[$size].card}px;
   aspect-ratio: 1 / 1;
   flex-shrink: 0;
 `
 
-export const ImageArea = styled.div<{ $imageSrc: string; $size: CardSize }>`
-  width: ${({ $size }) => DIM[$size].card}px;
-  height: ${({ $size }) => DIM[$size].card}px;
-  aspect-ratio: 1 / 1;
-  border-radius: ${({ $size }) => DIM[$size].imgR}px;
-  background: ${({ $imageSrc }) => coverImageBackground($imageSrc)};
-`
+export const ImageArea = ProductCardThumbImageArea
 
 export const FavoriteTopRight = styled(FavoriteButton)<{ $size: CardSize }>`
   top: ${({ $size }) => ($size === 'large' ? space[12] : space[6])};
@@ -50,9 +43,9 @@ export const NameOverlay = styled.div<{ $size: CardSize }>`
 
 export const NamePlate = styled.div<{ $size: CardSize }>`
   box-sizing: border-box;
-  width: ${({ $size }) => DIM[$size].plateW}px;
-  height: ${({ $size }) => DIM[$size].plateH}px;
-  border-radius: ${({ $size }) => DIM[$size].plateR}px;
+  width: ${({ $size }) => productCardDims[$size].plateW}px;
+  height: ${({ $size }) => productCardDims[$size].plateH}px;
+  border-radius: ${({ $size }) => productCardDims[$size].plateR}px;
   background: ${colors.surfacePill};
   display: flex;
   align-items: center;

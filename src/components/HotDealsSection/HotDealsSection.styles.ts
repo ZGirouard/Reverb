@@ -1,10 +1,9 @@
 import styled from '@emotion/styled'
-import { space } from '../../styles/spacing'
+import { FlexWrapRow, HomeSection, HomeSectionTitle } from '../../styles/shared.styles'
 
-export const Row = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: ${space[16]};
+export const Section = HomeSection
+export const Title = HomeSectionTitle
+
+export const Row = styled(FlexWrapRow)`
   align-items: flex-start;
 `

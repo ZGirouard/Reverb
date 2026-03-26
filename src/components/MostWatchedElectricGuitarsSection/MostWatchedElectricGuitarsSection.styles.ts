@@ -1,34 +1,19 @@
 import styled from '@emotion/styled'
-import { colors } from '../../styles/colors'
+import { productCardDims } from '../../styles/productCardPrimitives'
+import { FlexWrapRow, HomeSection, HomeSectionTitle } from '../../styles/shared.styles'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
-export const Section = styled.section`
-  margin-top: ${space[8]};
-  margin-bottom: ${space[24]};
-`
+export const Section = HomeSection
+export const Title = HomeSectionTitle
 
-export const Title = styled.h2`
-  margin: 0 0 ${space[16]};
-  color: ${colors.black};
-  font-family: ${FONT_FAMILY};
-  font-size: ${fontSize.titleSm};
-  font-style: normal;
-  font-weight: ${fontWeight.bold};
-  line-height: ${lineHeight.normal};
-`
-
-export const Row = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: ${space[16]};
+export const Row = styled(FlexWrapRow)`
   align-items: center;
 `
 
 export const QuadGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 146px);
-  grid-auto-rows: 146px;
+  grid-template-columns: repeat(2, ${productCardDims.default.card}px);
+  grid-auto-rows: ${productCardDims.default.card}px;
   gap: ${space[16]};
 `
 
