@@ -36,7 +36,6 @@ export default function MostWatchedElectricGuitarsSection() {
             <SmallProductCard
               key={item.id}
               imageSrc={item.imageSrc}
-              imageAlt={item.imageAlt}
               price={item.price}
               name={item.description}
             />
@@ -46,7 +45,6 @@ export default function MostWatchedElectricGuitarsSection() {
           <SmallProductCard
             size="large"
             imageSrc={center.imageSrc}
-            imageAlt={center.imageAlt}
             price={center.price}
             name={center.description}
           />
@@ -56,7 +54,6 @@ export default function MostWatchedElectricGuitarsSection() {
             <SmallProductCard
               key={item.id}
               imageSrc={item.imageSrc}
-              imageAlt={item.imageAlt}
               price={item.price}
               name={item.description}
             />
