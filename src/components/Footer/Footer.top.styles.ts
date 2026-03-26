@@ -119,11 +119,6 @@ export const SubscribeButton = styled.button`
   font-weight: ${fontWeight.bold};
   line-height: ${lineHeight.normal};
   white-space: nowrap;
-
-  &:focus-visible {
-    outline: 2px solid ${colors.white};
-    outline-offset: -${space[2]};
-  }
 `
 
 export const NewsletterDisclaimer = styled.p`

@@ -3,7 +3,6 @@ import { ImageFrame, Meta, RatingRow, ReviewCount, Root, Stars } from './BrowseS
 
 export type BrowseShopCardProps = {
   imageSrc: string
-  imageAlt?: string
   title: string
   metaLine: string
   reviewCount: number
@@ -17,7 +16,6 @@ function formatReviewCount(n: number) {
 
 export default function BrowseShopCard({
   imageSrc,
-  imageAlt,
   title,
   metaLine,
   reviewCount,

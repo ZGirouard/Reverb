@@ -25,14 +25,4 @@ export const Root = styled.button`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
-  &:focus-visible {
-    outline: 2px solid ${colors.neutral800};
-    outline-offset: ${space[2]};
-  }
-
-  &:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
 `

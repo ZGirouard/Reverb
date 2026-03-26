@@ -38,12 +38,6 @@ export const SocialIconLink = styled.a`
   &:hover {
     opacity: 0.85;
   }
-
-  &:focus-visible {
-    outline: 2px solid ${colors.white};
-    outline-offset: ${space[2]};
-    border-radius: 2px;
-  }
 `
 
 export const DownloadAppButton = styled(BaseButton)`
@@ -53,11 +47,6 @@ export const DownloadAppButton = styled(BaseButton)`
   border: 1px solid ${colors.white};
   background: transparent;
   color: ${colors.white};
-
-  &:focus-visible {
-    outline: 2px solid ${colors.white};
-    outline-offset: ${space[2]};
-  }
 
   &:hover {
     background: ${colors.whiteAlpha06};
@@ -103,11 +92,6 @@ export const LocaleSegment = styled.button`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
-  &:focus-visible {
-    outline: 2px solid ${colors.white};
-    outline-offset: -${space[2]};
-  }
 `
 
 export const LocaleDivider = styled.span`

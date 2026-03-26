@@ -18,11 +18,6 @@ export const Button = styled.button`
   justify-content: center;
   cursor: pointer;
 
-  &:focus-visible {
-    outline: 2px solid ${colors.neutral800};
-    outline-offset: ${space[2]};
-  }
-
   img {
     width: 16px;
     height: 16px;

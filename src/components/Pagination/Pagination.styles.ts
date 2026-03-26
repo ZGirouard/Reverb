@@ -17,13 +17,6 @@ export const List = styled.div`
   gap: ${space[8]};
 `
 
-const paginationFocus = `
-  &:focus-visible {
-    outline: 2px solid ${colors.black};
-    outline-offset: ${space[2]};
-  }
-`
-
 const PaginationControlButton = styled.button`
   box-sizing: border-box;
   border: none;
@@ -37,7 +30,6 @@ const PaginationControlButton = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  ${paginationFocus}
 `
 
 export const PageCircle = styled(PaginationControlButton)`

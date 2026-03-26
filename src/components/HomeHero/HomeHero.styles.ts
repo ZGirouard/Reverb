@@ -79,11 +79,6 @@ export const SignUpButton = styled.button`
   font-weight: ${fontWeight.semibold};
   line-height: ${lineHeight.normal};
   cursor: pointer;
-
-  &:focus-visible {
-    outline: 2px solid ${colors.neutral800};
-    outline-offset: ${space[4]};
-  }
 `
 
 export const ProductsColumn = styled.div`
