@@ -1,17 +1,9 @@
 import React, { useMemo } from 'react'
 import type { ProductListing } from '../../data/products'
 import { products } from '../../data/products'
+import { shuffle } from '../../utils/shuffle'
 import SmallProductCard from '../SmallProductCard/SmallProductCard'
 import { CenterSlot, QuadGrid, Row, Section, Title } from './MostWatchedElectricGuitarsSection.styles'
-
-function shuffle<T>(items: T[]): T[] {
-  const copy = [...items]
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[copy[i], copy[j]] = [copy[j], copy[i]]
-  }
-  return copy
-}
 
 function pickNineProducts(source: ProductListing[]): ProductListing[] {
   if (source.length >= 9) {

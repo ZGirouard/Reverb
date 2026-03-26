@@ -1,17 +1,9 @@
 import { useMemo } from 'react'
 import type { ProductListing } from '../../data/products'
 import { products } from '../../data/products'
+import { shuffle } from '../../utils/shuffle'
 import HotDealProductCard from '../HotDealProductCard/HotDealProductCard'
 import { Row, Section, Title } from './HotDealsSection.styles'
-
-function shuffle<T>(items: T[]): T[] {
-  const copy = [...items]
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[copy[i], copy[j]] = [copy[j], copy[i]]
-  }
-  return copy
-}
 
 function isHotDealProduct(
   p: ProductListing,
