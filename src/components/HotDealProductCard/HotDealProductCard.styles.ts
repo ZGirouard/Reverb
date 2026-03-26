@@ -38,7 +38,7 @@ export const PriceDropBadge = styled.p`
   margin: 0;
   color: ${colors.priceDrop};
   font-family: ${FONT_FAMILY};
-  font-size: ${fontSize.label};
+  font-size: ${fontSize.caption};
   font-style: normal;
   font-weight: ${fontWeight.semibold};
   line-height: ${lineHeight.normal};
@@ -78,7 +78,7 @@ export const WasRow = styled.div`
 export const WasPrice = styled.span`
   color: ${colors.neutral420};
   font-family: ${FONT_FAMILY};
-  font-size: ${fontSize.label};
+  font-size: ${fontSize.caption};
   font-style: normal;
   font-weight: ${fontWeight.semibold};
   line-height: ${lineHeight.normal};
@@ -88,7 +88,7 @@ export const WasPrice = styled.span`
 export const DropLabel = styled.span`
   color: ${colors.priceDropAccent};
   font-family: ${FONT_FAMILY};
-  font-size: ${fontSize.label};
+  font-size: ${fontSize.caption};
   font-style: normal;
   font-weight: ${fontWeight.semibold};
   line-height: ${lineHeight.normal};

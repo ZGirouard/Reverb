@@ -23,7 +23,7 @@ const PaginationControlButton = styled.button`
   background: ${colors.neutral300};
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: ${fontSize.bodySm};
+  font-size: ${fontSize.body};
   font-weight: ${fontWeight.semibold};
   line-height: ${lineHeight.tight};
   cursor: pointer;
@@ -47,7 +47,7 @@ export const EllipsisCircle = styled.span`
   background: ${colors.neutral300};
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: ${fontSize.bodySm};
+  font-size: ${fontSize.body};
   font-weight: ${fontWeight.semibold};
   line-height: ${lineHeight.controlMd};
   text-align: center;

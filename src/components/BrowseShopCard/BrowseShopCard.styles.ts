@@ -20,7 +20,7 @@ export const Meta = styled.p`
   margin: 0;
   color: ${colors.neutral350};
   font-family: ${FONT_FAMILY};
-  font-size: ${fontSize.caption2};
+  font-size: ${fontSize.caption};
   font-style: normal;
   font-weight: ${fontWeight.bold};
   line-height: ${lineHeight.normal};

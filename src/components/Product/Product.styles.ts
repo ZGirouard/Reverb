@@ -22,7 +22,7 @@ export const TagsRow = styled.div`
 
 export const GreatValueTag = styled.span`
   font-family: ${FONT_FAMILY};
-  font-size: ${fontSize.label};
+  font-size: ${fontSize.caption};
   font-style: normal;
   font-weight: ${fontWeight.semibold};
   line-height: ${lineHeight.normal};

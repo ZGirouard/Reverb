@@ -24,7 +24,7 @@ export const SectionTitle = styled.h3`
   margin: 0;
   color: ${colors.white};
   font-family: ${FONT_FAMILY};
-  font-size: ${fontSize.label};
+  font-size: ${fontSize.caption};
   font-style: normal;
   font-weight: ${fontWeight.semibold};
   line-height: ${lineHeight.normal};

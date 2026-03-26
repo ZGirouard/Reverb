@@ -18,7 +18,7 @@ export const Root = styled.button`
   cursor: pointer;
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: ${fontSize.bodySm};
+  font-size: ${fontSize.body};
   font-style: normal;
   font-weight: ${fontWeight.semibold};
   line-height: ${lineHeight.normal};

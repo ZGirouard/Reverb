@@ -30,7 +30,7 @@ export const IconWrap = styled.div`
 
 export const Label = styled.p`
   margin: 0;
-  font-size: ${fontSize.label};
+  font-size: ${fontSize.caption};
   line-height: ${lineHeight.snug};
   font-family: ${FONT_FAMILY};
   font-weight: ${fontWeight.semibold};

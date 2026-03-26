@@ -25,7 +25,7 @@ export const Input = styled.input`
   outline: none;
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: ${fontSize.label};
+  font-size: ${fontSize.caption};
   font-style: normal;
   font-weight: ${fontWeight.semibold};
   line-height: ${lineHeight.normal};
@@ -33,7 +33,7 @@ export const Input = styled.input`
   &::placeholder {
     color: ${colors.neutral600};
     font-family: ${FONT_FAMILY};
-    font-size: ${fontSize.label};
+    font-size: ${fontSize.caption};
     font-style: normal;
     font-weight: ${fontWeight.semibold};
     line-height: ${lineHeight.normal};
