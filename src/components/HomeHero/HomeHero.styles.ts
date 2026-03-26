@@ -1,3 +1,4 @@
+import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
 import { FONT_FAMILY } from '../../styles/tokens'
@@ -25,16 +26,16 @@ export const Inner = styled.div`
 `
 
 export const Left = styled.div`
-  flex: 1 1 240px;
+  flex: 1 1 360px;
   min-width: 0;
-  max-width: 240px;
+  max-width: 360px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
 `
 
-export const Title = styled.h1`
+export const heroTitleStyles = css`
   margin: 0;
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
@@ -43,6 +44,15 @@ export const Title = styled.h1`
   font-weight: 700;
   line-height: normal;
   white-space: pre-line;
+`
+
+export const Title = styled.h1`
+  ${heroTitleStyles}
+`
+
+/** Same typography as {@link Title}; use for secondary page bands (single h1 per page). */
+export const SectionTitle = styled.h2`
+  ${heroTitleStyles}
 `
 
 export const Subtitle = styled.p`

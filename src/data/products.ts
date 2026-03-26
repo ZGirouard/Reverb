@@ -9,6 +9,8 @@ export type ProductListing = {
   showFreeShipping?: boolean
   showReturnPolicy?: boolean
   showGreatValue?: boolean
+  wasPrice?: string
+  priceDropLabel?: string
 }
 
 export const products: ProductListing[] = [
@@ -19,6 +21,8 @@ export const products: ProductListing[] = [
     description: 'FUJIFGEN(FGN) Neo Classic NCTL-20R/ASH 2TS....',
     quality: 'Used - Good',
     price: '$872.39',
+    wasPrice: '$999',
+    priceDropLabel: '$127 price drop',
   },
   {
     id: '2',
@@ -39,6 +43,8 @@ export const products: ProductListing[] = [
     quality: 'Brand New',
     price: '$4,411.56',
     showFreeShipping: true,
+    wasPrice: '$5,199',
+    priceDropLabel: '$787 price drop',
   },
   {
     id: '4',
@@ -56,6 +62,8 @@ export const products: ProductListing[] = [
     quality: 'Used - Good',
     price: '$1,200',
     showFreeShipping: true,
+    wasPrice: '$1,499',
+    priceDropLabel: '$299 price drop',
   },
   {
     id: '6',
@@ -108,6 +116,8 @@ export const products: ProductListing[] = [
     description: 'FENDER MEXICO Player Jaguar 3-Tone Sunburst',
     quality: 'Used - Good',
     price: '$737.14',
+    wasPrice: '$899',
+    priceDropLabel: '$162 price drop',
   },
   {
     id: '12',
@@ -124,6 +134,8 @@ export const products: ProductListing[] = [
     description: 'YAMAHA SG-3000 CUSTOM Wine Red...',
     quality: 'Used - Good',
     price: '$2,928.25',
+    wasPrice: '$3,399',
+    priceDropLabel: '$471 price drop',
   },
   {
     id: '14',
@@ -192,6 +204,8 @@ export const products: ProductListing[] = [
     quality: 'Used - Good',
     price: '$275',
     showGreatValue: true,
+    wasPrice: '$349',
+    priceDropLabel: '$74 price drop',
   },
   {
     id: '22',
