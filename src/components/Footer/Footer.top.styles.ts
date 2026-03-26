@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 export const Column = styled.div`
   box-sizing: border-box;
@@ -24,10 +24,10 @@ export const SectionTitle = styled.h3`
   margin: 0;
   color: ${colors.white};
   font-family: ${FONT_FAMILY};
-  font-size: 11px;
+  font-size: ${fontSize.label};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
 `
 
 export const LinkList = styled.ul`
@@ -47,10 +47,10 @@ export const FooterLink = styled.a`
   margin: 0;
   color: ${colors.neutral600};
   font-family: ${FONT_FAMILY};
-  font-size: 8px;
+  font-size: ${fontSize.micro};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
   text-decoration: none;
 
   &:hover {
@@ -82,10 +82,10 @@ export const EmailField = styled.input`
   outline: none;
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 8px;
+  font-size: ${fontSize.micro};
   font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font-weight: ${fontWeight.medium};
+  line-height: ${lineHeight.normal};
 
   &::placeholder {
     color: ${colors.neutral550};
@@ -114,10 +114,10 @@ export const SubscribeButton = styled.button`
   cursor: pointer;
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 8px;
+  font-size: ${fontSize.micro};
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: ${fontWeight.bold};
+  line-height: ${lineHeight.normal};
   white-space: nowrap;
 
   &:focus-visible {
@@ -131,10 +131,10 @@ export const NewsletterDisclaimer = styled.p`
   max-width: 220px;
   color: ${colors.neutral550};
   font-family: ${FONT_FAMILY};
-  font-size: 8px;
+  font-size: ${fontSize.micro};
   font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font-weight: ${fontWeight.medium};
+  line-height: ${lineHeight.normal};
   white-space: pre-line;
 `
 

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 export const Nav = styled.nav`
   display: flex;
@@ -30,9 +30,9 @@ const PaginationControlButton = styled.button`
   background: ${colors.neutral300};
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1;
+  font-size: ${fontSize.bodySm};
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.tight};
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -55,9 +55,9 @@ export const EllipsisCircle = styled.span`
   background: ${colors.neutral300};
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 30px;
+  font-size: ${fontSize.bodySm};
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.controlMd};
   text-align: center;
   flex-shrink: 0;
   user-select: none;

@@ -1,14 +1,14 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 export const ReverbBumpParagraph = styled.p`
   margin: 0;
   color: ${colors.accentReverb};
   font-family: ${FONT_FAMILY};
-  font-size: 11px;
+  font-size: ${fontSize.label};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
   text-transform: uppercase;
 `

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 import { Root as BaseButton } from '../Button/Button.styles'
 
 export const BottomAppColumn = styled.div`
@@ -96,10 +96,10 @@ export const LocaleSegment = styled.button`
   cursor: pointer;
   color: ${colors.white};
   font-family: ${FONT_FAMILY};
-  font-size: 10px;
+  font-size: ${fontSize.caption};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

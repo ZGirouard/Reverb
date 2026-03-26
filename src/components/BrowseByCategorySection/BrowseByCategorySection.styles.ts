@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
+import { colors } from '../../styles/colors'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 export const Section = styled.section`
   margin-top: ${space[8]};
@@ -9,12 +10,12 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
   margin: 0 0 ${space[16]};
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 20px;
+  font-size: ${fontSize.titleSm};
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: ${fontWeight.bold};
+  line-height: ${lineHeight.normal};
   text-align: left;
 `
 
@@ -32,7 +33,7 @@ export const Card = styled.article`
   width: 135px;
   height: 210px;
   border-radius: 12px;
-  background: #f5f5f5;
+  background: ${colors.surfaceMuted};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,11 +66,11 @@ export const Label = styled.span`
   display: block;
   width: 100%;
   margin: 0;
-  color: #2f2f2f;
+  color: ${colors.neutral780};
   font-family: ${FONT_FAMILY};
-  font-size: 15px;
+  font-size: ${fontSize.bodyXL};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
   text-align: center;
 `

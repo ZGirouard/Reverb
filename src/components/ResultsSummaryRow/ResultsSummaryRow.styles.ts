@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 export const Row = styled.div`
   display: flex;
@@ -27,20 +27,20 @@ export const Title = styled.p`
   margin: 0;
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 14px;
+  font-size: ${fontSize.bodyLg};
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: ${fontWeight.bold};
+  line-height: ${lineHeight.normal};
 `
 
 export const Subtitle = styled.p`
   margin: 0;
   color: ${colors.neutral500};
   font-family: ${FONT_FAMILY};
-  font-size: 10px;
+  font-size: ${fontSize.caption};
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: ${fontWeight.bold};
+  line-height: ${lineHeight.normal};
 `
 
 export const Right = styled.div`

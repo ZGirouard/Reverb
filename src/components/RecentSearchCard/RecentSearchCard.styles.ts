@@ -1,8 +1,9 @@
 import styled from '@emotion/styled'
 import FavoriteButton from '../FavoriteButton/FavoriteButton'
+import { colors } from '../../styles/colors'
 import { coverImageBackground } from '../../styles/cssUtils'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 const CARD_W = 308
 
@@ -23,7 +24,7 @@ export const Header = styled.div`
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px 10px 0 0;
-  background: #f5f5f5;
+  background: ${colors.surfaceMuted};
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,22 +60,22 @@ export const HeaderText = styled.div`
 
 export const Title = styled.h3`
   margin: 0;
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 13px;
+  font-size: ${fontSize.body};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
 `
 
 export const Subtitle = styled.p`
   margin: 0;
-  color: #232323;
+  color: ${colors.neutral800};
   font-family: ${FONT_FAMILY};
-  font-size: 11px;
+  font-size: ${fontSize.label};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
 `
 
 export const HeaderFavorite = styled(FavoriteButton)`
@@ -92,7 +93,7 @@ export const ThumbDivider = styled.div`
   flex: 0 0 ${space[2]};
   width: ${space[2]};
   height: 153px;
-  background: #fff;
+  background: ${colors.white};
 `
 
 export const ThumbLeft = styled.div<{ $imageSrc: string }>`

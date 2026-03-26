@@ -1,8 +1,9 @@
 import styled from '@emotion/styled'
 import FavoriteButton from '../FavoriteButton/FavoriteButton'
+import { colors } from '../../styles/colors'
 import { coverImageBackground } from '../../styles/cssUtils'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 const card = 146
 const imgR = 14
@@ -42,23 +43,23 @@ export const FavoriteTopRight = styled(FavoriteButton)`
 
 export const PriceDropBadge = styled.p`
   margin: 0;
-  color: #d90f07;
+  color: ${colors.priceDrop};
   font-family: ${FONT_FAMILY};
-  font-size: 11px;
+  font-size: ${fontSize.label};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
 `
 
 export const ProductTitle = styled.h3`
   margin: 0;
   width: 100%;
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 13px;
+  font-size: ${fontSize.body};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
   text-align: left;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -82,31 +83,31 @@ export const WasRow = styled.div`
 `
 
 export const WasPrice = styled.span`
-  color: #b1b1b1;
+  color: ${colors.neutral420};
   font-family: ${FONT_FAMILY};
-  font-size: 11px;
+  font-size: ${fontSize.label};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
   text-decoration-line: line-through;
 `
 
 export const DropLabel = styled.span`
-  color: #da1811;
+  color: ${colors.priceDropAccent};
   font-family: ${FONT_FAMILY};
-  font-size: 11px;
+  font-size: ${fontSize.label};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
 `
 
 export const SalePrice = styled.p`
   margin: 0;
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 13px;
+  font-size: ${fontSize.body};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
   text-align: left;
 `

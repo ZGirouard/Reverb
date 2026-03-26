@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 export const Field = styled.div`
   position: relative;
@@ -25,18 +25,18 @@ export const Input = styled.input`
   outline: none;
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 11px;
+  font-size: ${fontSize.label};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
 
   &::placeholder {
     color: ${colors.neutral600};
     font-family: ${FONT_FAMILY};
-    font-size: 11px;
+    font-size: ${fontSize.label};
     font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    font-weight: ${fontWeight.semibold};
+    line-height: ${lineHeight.normal};
     opacity: 1;
   }
 `

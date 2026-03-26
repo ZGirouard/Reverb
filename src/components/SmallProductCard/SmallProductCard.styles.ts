@@ -1,17 +1,15 @@
 import styled from '@emotion/styled'
 import FavoriteButton from '../FavoriteButton/FavoriteButton'
+import { colors } from '../../styles/colors'
 import { coverImageBackground } from '../../styles/cssUtils'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 export type CardSize = 'default' | 'large'
 
-const DIM: Record<
-  CardSize,
-  { card: number; plateW: number; plateH: number; font: number; imgR: number; plateR: number }
-> = {
-  default: { card: 146, plateW: 122, plateH: 44, font: 13, imgR: 14, plateR: 15 },
-  large: { card: 300, plateW: 251, plateH: 90, font: 27, imgR: 29, plateR: 31 },
+const DIM: Record<CardSize, { card: number; plateW: number; plateH: number; imgR: number; plateR: number }> = {
+  default: { card: 146, plateW: 122, plateH: 44, imgR: 14, plateR: 15 },
+  large: { card: 300, plateW: 251, plateH: 90, imgR: 29, plateR: 31 },
 }
 
 export const Root = styled.article<{ $size: CardSize }>`
@@ -55,7 +53,7 @@ export const NamePlate = styled.div<{ $size: CardSize }>`
   width: ${({ $size }) => DIM[$size].plateW}px;
   height: ${({ $size }) => DIM[$size].plateH}px;
   border-radius: ${({ $size }) => DIM[$size].plateR}px;
-  background: #f9f9f9;
+  background: ${colors.surfacePill};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,16 +71,17 @@ export const PillStack = styled.div`
 `
 
 function pillLineCss($size: CardSize) {
+  const fs = $size === 'large' ? fontSize.titleLg : fontSize.body
   return `
     margin: 0;
     width: 100%;
     min-width: 0;
-    color: #000;
+    color: ${colors.black};
     font-family: ${FONT_FAMILY};
-    font-size: ${DIM[$size].font}px;
+    font-size: ${fs};
     font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    font-weight: ${fontWeight.semibold};
+    line-height: ${lineHeight.normal};
     text-align: left;
     overflow: hidden;
     text-overflow: ellipsis;

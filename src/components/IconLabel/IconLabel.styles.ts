@@ -2,7 +2,7 @@ import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 export const root = css`
   display: inline-flex;
@@ -30,9 +30,9 @@ export const IconWrap = styled.div`
 
 export const Label = styled.p`
   margin: 0;
-  font-size: 11px;
-  line-height: 1.25;
+  font-size: ${fontSize.label};
+  line-height: ${lineHeight.snug};
   font-family: ${FONT_FAMILY};
-  font-weight: 600;
+  font-weight: ${fontWeight.semibold};
   color: ${colors.neutral800};
 `

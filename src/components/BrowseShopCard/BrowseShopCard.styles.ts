@@ -3,7 +3,7 @@ import { colors } from '../../styles/colors'
 import { coverImageBackground } from '../../styles/cssUtils'
 import { CardColumnStack } from '../../styles/shared.styles'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 export const Root = styled(CardColumnStack)``
 
@@ -20,10 +20,10 @@ export const Meta = styled.p`
   margin: 0;
   color: ${colors.neutral350};
   font-family: ${FONT_FAMILY};
-  font-size: 9px;
+  font-size: ${fontSize.caption2};
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: ${fontWeight.bold};
+  line-height: ${lineHeight.normal};
 `
 
 export const RatingRow = styled.div`
@@ -38,18 +38,18 @@ export const Stars = styled.span`
   gap: ${space[1]};
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 10px;
+  font-size: ${fontSize.caption};
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: ${fontWeight.bold};
+  line-height: ${lineHeight.normal};
   letter-spacing: -0.02em;
 `
 
 export const ReviewCount = styled.span`
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 10px;
+  font-size: ${fontSize.caption};
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: ${fontWeight.bold};
+  line-height: ${lineHeight.normal};
 `

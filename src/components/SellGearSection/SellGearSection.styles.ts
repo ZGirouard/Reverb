@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 import { Section as HeroSection } from '../HomeHero/HomeHero.styles'
 
 const SELL_SECTION_BG = '/blueBackground.png'
@@ -15,7 +15,7 @@ export const BenefitPanel = styled.div`
   width: 439px;
   height: 326px;
   border-radius: 17px;
-  background: #e7faf8;
+  background: ${colors.surfaceMint};
   padding: ${space[32]} ${space[36]};
   display: flex;
   flex-direction: column;
@@ -48,21 +48,21 @@ export const BenefitText = styled.div`
 
 export const BenefitTitle = styled.h3`
   margin: 0;
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 20px;
+  font-size: ${fontSize.titleSm};
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: ${fontWeight.bold};
+  line-height: ${lineHeight.normal};
 `
 
 export const BenefitSubtitle = styled.p`
   margin: 0;
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 14px;
+  font-size: ${fontSize.bodyLg};
   font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-weight: ${fontWeight.normal};
+  line-height: ${lineHeight.normal};
   white-space: pre-line;
 `

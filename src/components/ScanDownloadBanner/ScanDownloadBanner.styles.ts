@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
+import { colors } from '../../styles/colors'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 export const Section = styled.section`
   margin-top: ${space[8]};
@@ -15,7 +16,7 @@ export const Band = styled.div`
   margin-left: auto;
   margin-right: auto;
   border-radius: 11px;
-  background: #ffe738;
+  background: ${colors.promoYellow};
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -38,7 +39,7 @@ export const WhiteCard = styled.div`
   width: 111px;
   height: 168px;
   border-radius: 11px;
-  background: #fff;
+  background: ${colors.white};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,12 +50,12 @@ export const WhiteCard = styled.div`
 
 export const ScanText = styled.p`
   margin: 0;
-  color: #232323;
+  color: ${colors.neutral800};
   font-family: ${FONT_FAMILY};
-  font-size: 11px;
+  font-size: ${fontSize.label};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
   text-align: center;
   white-space: pre-line;
 `
@@ -81,23 +82,23 @@ export const MiddleHalf = styled.div`
 
 export const Headline = styled.h2`
   margin: 0 0 ${space[12]};
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 36px;
+  font-size: ${fontSize.displaySm};
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: ${fontWeight.bold};
+  line-height: ${lineHeight.normal};
   white-space: pre-line;
 `
 
 export const Subheadline = styled.p`
   margin: 0;
-  color: #000;
+  color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 20px;
+  font-size: ${fontSize.titleSm};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
   white-space: pre-line;
 `
 

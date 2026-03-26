@@ -2,7 +2,7 @@ import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 const HERO_IMAGE = '/heroBackground.png'
 
@@ -40,10 +40,10 @@ export const heroTitleStyles = css`
   margin: 0;
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 48px;
+  font-size: ${fontSize.displayLg};
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: ${fontWeight.bold};
+  line-height: ${lineHeight.normal};
   white-space: pre-line;
 `
 
@@ -60,10 +60,10 @@ export const Subtitle = styled.p`
   margin: 0;
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 24px;
+  font-size: ${fontSize.titleMd};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
   white-space: pre-line;
 `
 
@@ -75,10 +75,10 @@ export const SignUpButton = styled.button`
   background: ${colors.black};
   color: ${colors.neutral150};
   font-family: ${FONT_FAMILY};
-  font-size: 15px;
+  font-size: ${fontSize.bodyXL};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
   cursor: pointer;
 
   &:focus-visible {

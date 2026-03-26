@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 export const Root = styled.button`
   box-sizing: border-box;
@@ -18,10 +18,10 @@ export const Root = styled.button`
   cursor: pointer;
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 12px;
+  font-size: ${fontSize.bodySm};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

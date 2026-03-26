@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { colors } from './colors'
 import { space } from './spacing'
-import { FONT_FAMILY } from './tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from './tokens'
 
 export const FiveColumnGrid = styled.div`
   display: grid;
@@ -23,10 +23,10 @@ export const FilterChip = styled.span`
   background: ${colors.neutral200};
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 10px;
+  font-size: ${fontSize.caption};
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: ${fontWeight.bold};
+  line-height: ${lineHeight.normal};
   padding: ${space[8]} ${space[10]};
   white-space: nowrap;
   user-select: none;

@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import { coverImageBackground } from '../../styles/cssUtils'
 import { colors } from '../../styles/colors'
 import { space } from '../../styles/spacing'
-import { FONT_FAMILY } from '../../styles/tokens'
+import { FONT_FAMILY, fontSize, fontWeight, lineHeight } from '../../styles/tokens'
 
 export const Root = styled.article`
   width: 143px;
@@ -35,9 +35,9 @@ export const CaptionText = styled.p`
   margin: 0;
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
-  font-size: 15px;
+  font-size: ${fontSize.bodyXL};
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: ${fontWeight.semibold};
+  line-height: ${lineHeight.normal};
   white-space: pre-line;
 `
