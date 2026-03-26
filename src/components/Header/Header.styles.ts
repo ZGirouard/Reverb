@@ -15,7 +15,7 @@ export const TopRow = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  gap: ${space[8]};
+  gap: ${space[12]};
   width: 100%;
   padding: ${space[8]} ${space[8]};
 `
@@ -47,7 +47,7 @@ export const NavRow = styled.nav`
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  gap: ${space[8]};
+  justify-content: space-between;
   width: 100%;
   padding: ${space[8]} ${space[8]};
 `

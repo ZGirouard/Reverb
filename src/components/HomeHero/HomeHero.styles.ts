@@ -27,9 +27,9 @@ export const Inner = styled.div`
 `
 
 export const Left = styled.div`
-  flex: 1 1 360px;
+  flex: 1 1 400px;
   min-width: 0;
-  max-width: 360px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

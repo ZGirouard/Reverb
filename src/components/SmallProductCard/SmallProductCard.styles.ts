@@ -64,7 +64,7 @@ export const PillStack = styled.div`
 `
 
 function pillLineCss($size: CardSize) {
-  const fs = $size === 'large' ? fontSize.titleLg : fontSize.body
+  const fs = $size === 'large' ? fontSize.bodyLg : fontSize.body
   return `
     margin: 0;
     width: 100%;

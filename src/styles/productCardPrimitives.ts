@@ -3,7 +3,7 @@ import { coverImageBackground } from './cssUtils'
 
 export const productCardDims = {
   default: { card: 146, plateW: 122, plateH: 44, imgR: 14, plateR: 15 },
-  large: { card: 300, plateW: 251, plateH: 90, imgR: 29, plateR: 31 },
+  large: { card: 300, plateW: 240, plateH: 70, imgR: 27, plateR: 24 },
 } as const
 
 export type ProductCardSize = keyof typeof productCardDims
