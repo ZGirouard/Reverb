@@ -30,9 +30,12 @@ export const SocialIconLink = styled.a`
   color: ${colors.white};
   text-decoration: none;
 
-  svg {
+  svg,
+  img {
     width: 100%;
     height: 100%;
+    display: block;
+    object-fit: contain;
   }
 
   &:hover {

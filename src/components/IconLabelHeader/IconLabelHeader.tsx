@@ -1,4 +1,3 @@
-import React from 'react'
 import { IconWrap, Label, Root } from './IconLabelHeader.styles'
 
 export const ICON_LABEL_HEADER_VARIANTS = {

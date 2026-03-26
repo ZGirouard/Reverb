@@ -1,4 +1,4 @@
-import React, { type ReactNode } from 'react'
+import { type ReactNode } from 'react'
 import { FooterBottomApp } from './FooterBottomApp'
 import FooterBottomLocale from './FooterBottomLocale'
 import { FooterBottomReverbGives } from './FooterBottomReverbGives'

@@ -1,4 +1,3 @@
-import React from 'react'
 import { FooterLegalLine } from './Footer.top.styles'
 import { BottomFirstColumn, LocaleDivider, LocalePill, LocaleSegment } from './Footer.bottom.styles'
 

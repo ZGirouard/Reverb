@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import { useMemo } from 'react'
 import type { ProductListing } from '../../data/products'
 import { products } from '../../data/products'
 import { shuffle } from '../../utils/shuffle'

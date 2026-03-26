@@ -1,4 +1,4 @@
-import React from 'react'
+import type { ReactNode } from 'react'
 import { space } from '../../styles/spacing'
 import {
   Column,
@@ -114,7 +114,7 @@ export function FooterTopNavColumn5() {
   )
 }
 
-export function defaultFooterTopSlots(): React.ReactNode[] {
+export function defaultFooterTopSlots(): ReactNode[] {
   return [
     <FooterTopNavColumn1 key="c1" />,
     <FooterTopNavColumn2 key="c2" />,

@@ -1,4 +1,3 @@
-import React from 'react'
 import HeaderText from '../HeaderText/HeaderText'
 import { HeaderTextLink } from '../HeaderText/HeaderText.styles'
 import IconLabelHeader from '../IconLabelHeader/IconLabelHeader'

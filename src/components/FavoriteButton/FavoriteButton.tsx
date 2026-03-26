@@ -1,4 +1,4 @@
-import React, { type ComponentProps } from 'react'
+import { type ComponentProps } from 'react'
 import { Button } from './FavoriteButton.styles'
 
 const heartSrc = '/heart.svg'

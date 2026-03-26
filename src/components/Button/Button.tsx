@@ -1,4 +1,4 @@
-import React, { type ComponentProps } from 'react'
+import { type ComponentProps } from 'react'
 import { Root } from './Button.styles'
 
 export type ButtonProps = ComponentProps<typeof Root>

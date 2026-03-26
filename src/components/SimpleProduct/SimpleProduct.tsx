@@ -1,4 +1,4 @@
-import React, { type ReactNode } from 'react'
+import { type ReactNode } from 'react'
 import { Caption, CaptionText, ImageArea, Root } from './SimpleProduct.styles'
 
 export type SimpleProductProps = {

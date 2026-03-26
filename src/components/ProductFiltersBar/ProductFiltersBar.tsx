@@ -1,4 +1,3 @@
-import React from 'react'
 import { FilterChip } from '../../styles/shared.styles'
 import { Row } from './ProductFiltersBar.styles'
 

@@ -1,4 +1,4 @@
-import React, { type ReactNode } from 'react'
+import { type ReactNode } from 'react'
 import FavoriteButton from '../FavoriteButton/FavoriteButton'
 import IconLabel from '../IconLabel/IconLabel'
 import ItemLabel from '../ItemLabel/ItemLabel'

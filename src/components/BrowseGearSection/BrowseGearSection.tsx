@@ -1,4 +1,3 @@
-import React from 'react'
 import BrowseShopCard from '../BrowseShopCard/BrowseShopCard'
 import { browseShops } from '../../data/browseShops'
 import { Grid, Section, Title } from './BrowseGearSection.styles'

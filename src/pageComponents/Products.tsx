@@ -1,4 +1,3 @@
-import React from 'react'
 import BrowseGearSection from '../components/BrowseGearSection/BrowseGearSection'
 import Footer from '../components/Footer/Footer'
 import Pagination from '../components/Pagination/Pagination'

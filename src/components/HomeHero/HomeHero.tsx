@@ -1,4 +1,3 @@
-import React from 'react'
 import SimpleProduct from '../SimpleProduct/SimpleProduct'
 import {
   Inner,

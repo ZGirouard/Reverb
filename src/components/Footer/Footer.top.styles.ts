@@ -91,10 +91,6 @@ export const EmailField = styled.input`
     color: ${colors.neutral550};
     opacity: 1;
   }
-
-  &:focus::placeholder {
-    opacity: 0.65;
-  }
 `
 
 export const SubscribeBarDivider = styled.span`

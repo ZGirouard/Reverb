@@ -1,4 +1,3 @@
-import React from 'react'
 import { EllipsisCircle, List, Nav, NextPill, PageCircle } from './Pagination.styles'
 
 const DEFAULT_PAGE_NUMBERS = [1, 2, 3, 4, 5] as const

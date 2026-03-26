@@ -1,4 +1,3 @@
-import React from 'react'
 import type { OptionalClassNameProps } from '../../types/emotionWrappers'
 import { ReverbBumpParagraph } from './ReverbBump.styles'
 

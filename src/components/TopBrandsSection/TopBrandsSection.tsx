@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrandTile, Grid, Section, Title } from './TopBrandsSection.styles'
 
 const FENDER_SRC = '/fender.png'
