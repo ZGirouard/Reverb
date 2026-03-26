@@ -23,4 +23,9 @@ export const Button = styled.button`
     height: 16px;
     display: block;
   }
+
+  &:hover {
+    background: ${colors.neutral150};
+    transition: all 0.3s ease;
+  }
 `

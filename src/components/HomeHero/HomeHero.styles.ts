@@ -79,6 +79,11 @@ export const SignUpButton = styled.button`
   font-weight: ${fontWeight.semibold};
   line-height: ${lineHeight.normal};
   cursor: pointer;
+
+  &:hover {
+    background: ${colors.neutral950};
+    transition: all 0.3s ease;
+  }
 `
 
 export const ProductsColumn = styled.div`

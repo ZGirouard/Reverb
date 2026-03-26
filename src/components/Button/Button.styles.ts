@@ -25,4 +25,9 @@ export const Root = styled.button`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  &:hover {
+    background: ${colors.neutral150};
+    transition: all 0.3s ease;
+  }
 `
