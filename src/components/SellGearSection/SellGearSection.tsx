@@ -46,7 +46,7 @@ export default function SellGearSection() {
         <BenefitPanel>
           {BENEFITS.map((item) => (
             <BenefitRow key={item.title}>
-              <SearchIcon src={searchIconSrc} alt="" width={36} height={36} decoding="async" />
+              <SearchIcon src={searchIconSrc} width={36} height={36} />
               <BenefitText>
                 <BenefitTitle>{item.title}</BenefitTitle>
                 <BenefitSubtitle>{item.subtitle}</BenefitSubtitle>

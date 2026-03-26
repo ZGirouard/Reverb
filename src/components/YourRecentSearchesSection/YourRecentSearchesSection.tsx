@@ -8,8 +8,6 @@ const ENTRIES = [
     itemCount: 126,
     leftImageSrc: '/Guitars/Guitar6.png',
     rightImageSrc: '/Guitars/Guitar7.png',
-    leftImageAlt: 'YAMAHA SA-700 electric guitar',
-    rightImageAlt: 'Greco SA550W electric guitar',
   },
   {
     key: 'recent-2',
@@ -17,8 +15,6 @@ const ENTRIES = [
     itemCount: 54,
     leftImageSrc: '/Guitars/Guitar11.png',
     rightImageSrc: '/Guitars/Guitar18.png',
-    leftImageAlt: 'Fender Player Jaguar',
-    rightImageAlt: 'Fender Hybrid II Stratocaster',
   },
   {
     key: 'recent-3',
@@ -26,8 +22,6 @@ const ENTRIES = [
     itemCount: 203,
     leftImageSrc: '/Guitars/Guitar14.png',
     rightImageSrc: '/Guitars/Guitar16.png',
-    leftImageAlt: 'SEED Kotetsu electric guitar',
-    rightImageAlt: 'Fender Esquire Relic',
   },
 ] as const
 
@@ -43,8 +37,6 @@ export default function YourRecentSearchesSection() {
             itemCount={entry.itemCount}
             leftImageSrc={entry.leftImageSrc}
             rightImageSrc={entry.rightImageSrc}
-            leftImageAlt={entry.leftImageAlt}
-            rightImageAlt={entry.rightImageAlt}
           />
         ))}
       </Columns>

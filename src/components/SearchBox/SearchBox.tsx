@@ -9,8 +9,8 @@ export default function SearchBox({ placeholder = 'Search', className, ...rest }
   return (
     <Field className={className}>
       <Input type="search" placeholder={placeholder} {...rest} />
-      <IconWrap aria-hidden>
-        <img src={searchIconSrc} alt="" />
+      <IconWrap>
+        <img src={searchIconSrc} />
       </IconWrap>
     </Field>
   )

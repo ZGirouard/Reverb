@@ -34,8 +34,8 @@ export default function IconLabelHeader({ variant, className }: IconLabelHeaderP
 
   return (
     <Root className={className}>
-      <IconWrap aria-hidden>
-        <img src={iconSrc} alt="" />
+      <IconWrap>
+        <img src={iconSrc}/>
       </IconWrap>
       <Label>{label}</Label>
     </Root>

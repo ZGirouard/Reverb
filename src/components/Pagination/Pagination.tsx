@@ -16,7 +16,7 @@ export default function Pagination({ pageNumbers = DEFAULT_PAGE_NUMBERS, classNa
             {n}
           </PageCircle>
         ))}
-        <EllipsisCircle aria-hidden>…</EllipsisCircle>
+        <EllipsisCircle>…</EllipsisCircle>
         <NextPill type="button">Next</NextPill>
       </List>
     </Nav>

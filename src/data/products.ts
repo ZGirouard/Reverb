@@ -1,7 +1,6 @@
 export type ProductListing = {
   id: string
   imageSrc: string
-  imageAlt: string
   description: string
   quality: string
   price: string
@@ -17,7 +16,6 @@ export const products: ProductListing[] = [
   {
     id: '1',
     imageSrc: '/Guitars/Guitar1.png',
-    imageAlt: 'FUJIFGEN Neo Classic NCTL-20R electric guitar',
     description: 'FUJIFGEN(FGN) Neo Classic NCTL-20R/ASH 2TS....',
     quality: 'Used - Good',
     price: '$872.39',
@@ -27,7 +25,6 @@ export const products: ProductListing[] = [
   {
     id: '2',
     imageSrc: '/Guitars/Guitar2.png',
-    imageAlt: 'Build to Order GB Lituteria Boutique Ergal 6 string guitar',
     reverbBump: 'REVERB BUMP',
     description: 'Build to Order GB Lituteria Boutique Ergal 6 string...',
     quality: 'Brand New',
@@ -37,7 +34,6 @@ export const products: ProductListing[] = [
   {
     id: '3',
     imageSrc: '/Guitars/Guitar3.png',
-    imageAlt: 'Build to Order GB Lituteria Traditional Tele hi-gloss guitar',
     reverbBump: 'REVERB BUMP',
     description: 'Build to Order GB Lituteria Traditional Tele hi-gloss...',
     quality: 'Brand New',
@@ -49,7 +45,6 @@ export const products: ProductListing[] = [
   {
     id: '4',
     imageSrc: '/Guitars/Guitar4.png',
-    imageAlt: 'Paul Reed Smith 1996 Santana electric guitar',
     description: 'Paul Reed Smith (PRS) 1996 Santana | Santana...',
     quality: 'Used - Good',
     price: '$6,843.86',
@@ -57,7 +52,6 @@ export const products: ProductListing[] = [
   {
     id: '5',
     imageSrc: '/Guitars/Guitar5.png',
-    imageAlt: 'Gibson SG Standard Ebony electric guitar',
     description: 'Gibson SG Standard 1991 - 2012 - Ebony',
     quality: 'Used - Good',
     price: '$1,200',
@@ -68,7 +62,6 @@ export const products: ProductListing[] = [
   {
     id: '6',
     imageSrc: '/Guitars/Guitar6.png',
-    imageAlt: 'YAMAHA SA-700 Super Axe electric guitar',
     description: 'YAMAHA SA-700 Super Axe Persimmon Red...',
     quality: 'Used - Good',
     price: '$872.39',
@@ -76,7 +69,6 @@ export const products: ProductListing[] = [
   {
     id: '7',
     imageSrc: '/Guitars/Guitar7.png',
-    imageAlt: 'Greco SA550W Walnut electric guitar',
     description: 'Greco SA550W Walnut [-] (02/11)',
     quality: 'Used - Good',
     price: '$1,406.64',
@@ -84,7 +76,6 @@ export const products: ProductListing[] = [
   {
     id: '8',
     imageSrc: '/Guitars/Guitar8.png',
-    imageAlt: 'Epiphone Slash Les Paul Standard Anaconda Burst',
     description: 'EPIPHONE Slash Les Paul Standard Anaconda Burst...',
     quality: 'Used - Good',
     price: '$872.39',
@@ -92,7 +83,6 @@ export const products: ProductListing[] = [
   {
     id: '9',
     imageSrc: '/Guitars/Guitar9.png',
-    imageAlt: 'Build to Order GB Lituteria Boutique Ergal 8 string guitar',
     reverbBump: 'REVERB BUMP',
     description: 'Build to Order GB Lituteria Boutique Ergal 8 string...',
     quality: 'Brand New',
@@ -102,7 +92,6 @@ export const products: ProductListing[] = [
   {
     id: '10',
     imageSrc: '/Guitars/Guitar10.png',
-    imageAlt: 'Build to Order GB Lituteria Boutique Pile 7 string guitar',
     reverbBump: 'REVERB BUMP',
     description: 'Build to Order GB Lituteria Boutique Pile 7 string toa...',
     quality: 'Brand New',
@@ -112,7 +101,6 @@ export const products: ProductListing[] = [
   {
     id: '11',
     imageSrc: '/Guitars/Guitar11.png',
-    imageAlt: 'Fender Mexico Player Jaguar 3-Tone Sunburst',
     description: 'FENDER MEXICO Player Jaguar 3-Tone Sunburst',
     quality: 'Used - Good',
     price: '$737.14',
@@ -122,7 +110,6 @@ export const products: ProductListing[] = [
   {
     id: '12',
     imageSrc: '/Guitars/Guitar12.png',
-    imageAlt: 'Orville by Gibson Firebird Vintage Sunburst',
     description: 'ORVILLE BY GIBSON FB Firebird Vintage Sunburst..',
     quality: 'Used - Good',
     price: '$1,717.73',
@@ -130,7 +117,6 @@ export const products: ProductListing[] = [
   {
     id: '13',
     imageSrc: '/Guitars/Guitar13.png',
-    imageAlt: 'YAMAHA SG-3000 Custom Wine Red electric guitar',
     description: 'YAMAHA SG-3000 CUSTOM Wine Red...',
     quality: 'Used - Good',
     price: '$2,928.25',
@@ -140,7 +126,6 @@ export const products: ProductListing[] = [
   {
     id: '14',
     imageSrc: '/Guitars/Guitar14.png',
-    imageAlt: 'SEED Kotetsu White electric guitar',
     description: 'SEED Kotetsu White [WO2448] (02/11)',
     quality: 'Used - Good',
     price: '$872.39',
@@ -148,7 +133,6 @@ export const products: ProductListing[] = [
   {
     id: '15',
     imageSrc: '/Guitars/Guitar15.png',
-    imageAlt: 'Fender Japan TL52 Vintage Natural Telecaster',
     description: 'FENDER JAPAN (-2015) TL52 Vintage Natural[MI....',
     quality: 'Used - Good',
     price: '$1,332.25',
@@ -156,7 +140,6 @@ export const products: ProductListing[] = [
   {
     id: '16',
     imageSrc: '/Guitars/Guitar16.png',
-    imageAlt: 'Fender Esquire 1970s Relic Black electric guitar',
     description: "Fender Esquire 1970s - Relic'd Black",
     quality: 'Used - Good',
     price: '$800',
@@ -164,7 +147,6 @@ export const products: ProductListing[] = [
   {
     id: '17',
     imageSrc: '/Guitars/Guitar17.png',
-    imageAlt: 'Tokai Ate 142 G Mh electric guitar',
     description: 'Tokai Ate 142 G Mh [200676] (02/11)',
     quality: 'Used - Good',
     price: '$953.54',
@@ -172,7 +154,6 @@ export const products: ProductListing[] = [
   {
     id: '18',
     imageSrc: '/Guitars/Guitar18.png',
-    imageAlt: 'Fender Made in Japan Hybrid II Stratocaster',
     description: 'FENDER MADE IN JAPAN Hybrid II Stratocaster MN..',
     quality: 'Used - Good',
     price: '$1,007.64',
@@ -180,7 +161,6 @@ export const products: ProductListing[] = [
   {
     id: '19',
     imageSrc: '/Guitars/Guitar19.png',
-    imageAlt: 'Fender Road Worn 50s Telecaster',
     description: "Fender Road Worn '50s Telecaster 2009 - 2019 - ...",
     quality: 'Used - Excellent',
     price: '$1,050',
@@ -189,7 +169,6 @@ export const products: ProductListing[] = [
   {
     id: '20',
     imageSrc: '/Guitars/Guitar20.png',
-    imageAlt: 'Lego Guitar',
     reverbBump: 'REVERB BUMP',
     description: 'Lego Guitar',
     quality: 'Brand New',
@@ -199,7 +178,6 @@ export const products: ProductListing[] = [
   {
     id: '21',
     imageSrc: '/Guitars/Guitar21.png',
-    imageAlt: 'Gretsch G2215-P90 Streamliner Junior Jet',
     description: 'Gretsch G2215-P90 Streamliner Junior Jet Clu..',
     quality: 'Used - Good',
     price: '$275',
@@ -210,7 +188,6 @@ export const products: ProductListing[] = [
   {
     id: '22',
     imageSrc: '/Guitars/Guitar22.png',
-    imageAlt: 'Padalka Supreme guitar',
     reverbBump: 'REVERB BUMP',
     description: 'Padalka Supreme',
     quality: 'Used - Mint',
@@ -219,7 +196,6 @@ export const products: ProductListing[] = [
   {
     id: '23',
     imageSrc: '/Guitars/Guitar23.png',
-    imageAlt: 'Gibson Custom Shop 60th Anniversary 57 Goldtop',
     reverbBump: 'REVERB BUMP',
     description: "Gibson Custom Shop 60th Anniversary '57 Goldtop...",
     quality: 'Used - Excellent',
@@ -228,7 +204,6 @@ export const products: ProductListing[] = [
   {
     id: '24',
     imageSrc: '/Guitars/Guitar24.png',
-    imageAlt: 'GEESTER Custom Skull guitar 2022 Black',
     description: 'GEESTER Custom Skull guitar 2022 - Black',
     quality: 'Used - Very Good',
     price: '$800',
@@ -237,7 +212,6 @@ export const products: ProductListing[] = [
   {
     id: '25',
     imageSrc: '/Guitars/Guitar25.png',
-    imageAlt: '2019 Epiphone Les Paul Standard Pro',
     description: '2019 Epiphone Les Paul Standard Pro - Transpare...',
     quality: 'Used - Excellent',
     price: '$420',

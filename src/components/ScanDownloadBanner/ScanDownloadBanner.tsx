@@ -31,7 +31,7 @@ export default function ScanDownloadBanner() {
         <LeftQuarter>
           <WhiteCard>
             <ScanText>{scanCopy}</ScanText>
-            <QrImage src={qrSrc} alt="QR code to download the Reverb app" width={95} height={87} decoding="async" />
+            <QrImage src={qrSrc} width={95} height={87} />
           </WhiteCard>
         </LeftQuarter>
         <MiddleHalf>
@@ -39,7 +39,7 @@ export default function ScanDownloadBanner() {
           <Subheadline>{subtitleCopy}</Subheadline>
         </MiddleHalf>
         <RightQuarter>
-          <KeyboardCut src={keyboardSrc} alt="" decoding="async" />
+          <KeyboardCut src={keyboardSrc} />
         </RightQuarter>
       </Band>
     </Section>

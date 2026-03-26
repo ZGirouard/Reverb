@@ -12,9 +12,7 @@ export default function TopBrandsSection() {
           <BrandTile
             key={i}
             src={FENDER_SRC}
-            alt={i === 0 ? 'Fender' : ''}
             loading="lazy"
-            aria-hidden={i === 0 ? undefined : true}
           />
         ))}
       </Grid>

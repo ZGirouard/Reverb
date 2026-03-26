@@ -20,8 +20,6 @@ export type RecentSearchCardProps = {
   itemCount: number
   leftImageSrc: string
   rightImageSrc: string
-  leftImageAlt?: string
-  rightImageAlt?: string
   onFavoriteClick?: () => void
 }
 
@@ -30,15 +28,13 @@ export default function RecentSearchCard({
   itemCount,
   leftImageSrc,
   rightImageSrc,
-  leftImageAlt,
-  rightImageAlt,
   onFavoriteClick,
 }: RecentSearchCardProps) {
   return (
     <Root>
       <Header>
         <HeaderMain>
-          <SearchIcon src={searchIconSrc} alt="" width={13} height={13} decoding="async" />
+          <SearchIcon src={searchIconSrc} width={13} height={13} />
           <HeaderText>
             <Title>{searchTitle}</Title>
             <Subtitle>
@@ -50,7 +46,7 @@ export default function RecentSearchCard({
       </Header>
       <ImageRow>
         <ThumbLeft $imageSrc={leftImageSrc} />
-        <ThumbDivider aria-hidden />
+        <ThumbDivider />
         <ThumbRight $imageSrc={rightImageSrc} />
       </ImageRow>
     </Root>

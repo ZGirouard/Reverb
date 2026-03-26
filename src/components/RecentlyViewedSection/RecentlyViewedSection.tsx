@@ -17,7 +17,6 @@ export default function RecentlyViewedSection() {
           <Product
             key={item.id}
             imageSrc={item.imageSrc}
-            imageAlt={item.imageAlt}
             description={item.description}
             quality={item.quality}
             price={item.price}

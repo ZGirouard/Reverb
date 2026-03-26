@@ -18,7 +18,6 @@ export default function JustListedSection() {
           <Product
             key={item.id}
             imageSrc={item.imageSrc}
-            imageAlt={item.imageAlt}
             description={item.description}
             quality={item.quality}
             price={item.price}

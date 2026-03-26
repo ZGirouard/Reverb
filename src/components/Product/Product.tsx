@@ -10,7 +10,6 @@ import { GreatValueTag, ImageWrap, Root, TagsRow } from './Product.styles'
 
 export type ProductProps = {
   imageSrc: string
-  imageAlt?: string
   reverbBump?: ReactNode
   description: ReactNode
   quality: ReactNode
@@ -24,7 +23,6 @@ export type ProductProps = {
 
 export default function Product({
   imageSrc,
-  imageAlt,
   reverbBump,
   description,
   quality,
@@ -40,7 +38,7 @@ export default function Product({
   return (
     <Root className={className}>
       <ImageWrap>
-        <ProductImage src={imageSrc} alt={imageAlt} />
+        <ProductImage src={imageSrc} />
         <FavoriteButton onClick={onFavoriteClick} />
       </ImageWrap>
       {reverbBump != null ? <ReverbBump>{reverbBump}</ReverbBump> : null}

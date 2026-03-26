@@ -13,7 +13,6 @@ import {
 
 export type SmallProductCardProps = {
   imageSrc: string
-  imageAlt?: string
   price: ReactNode
   name: ReactNode
   className?: string
@@ -23,7 +22,6 @@ export type SmallProductCardProps = {
 
 export default function SmallProductCard({
   imageSrc,
-  imageAlt,
   price,
   name,
   className,
