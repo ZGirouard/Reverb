@@ -2,6 +2,8 @@ import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import HomeHero from '../components/HomeHero/HomeHero'
 import HotDealsSection from '../components/HotDealsSection/HotDealsSection'
+import BrowseByCategorySection from '../components/BrowseByCategorySection/BrowseByCategorySection'
+import ScanDownloadBanner from '../components/ScanDownloadBanner/ScanDownloadBanner'
 import JustListedSection from '../components/JustListedSection/JustListedSection'
 import MostWatchedElectricGuitarsSection from '../components/MostWatchedElectricGuitarsSection/MostWatchedElectricGuitarsSection'
 import RecentlyViewedSection from '../components/RecentlyViewedSection/RecentlyViewedSection'
@@ -20,6 +22,8 @@ export default function Home() {
       <SellGearSection />
       <HotDealsSection />
       <JustListedSection />
+      <BrowseByCategorySection />
+      <ScanDownloadBanner />
       <Footer />
     </HomePage>
   )
