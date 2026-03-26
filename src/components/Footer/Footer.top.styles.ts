@@ -1,12 +1,13 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Column = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: ${space[24]};
   min-height: 0;
   height: 100%;
   overflow-y: auto;
@@ -15,7 +16,7 @@ export const Column = styled.div`
 export const Section = styled.section`
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: ${space[12]};
   margin: 0;
 `
 
@@ -35,7 +36,7 @@ export const LinkList = styled.ul`
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: ${space[8]};
 `
 
 export const LinkItem = styled.li`
@@ -75,7 +76,7 @@ export const EmailField = styled.input`
   min-width: 0;
   height: 100%;
   margin: 0;
-  padding: 0 8px;
+  padding: 0 ${space[8]};
   border: none;
   background: transparent;
   outline: none;
@@ -107,7 +108,7 @@ export const SubscribeButton = styled.button`
   box-sizing: border-box;
   flex-shrink: 0;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 ${space[10]};
   border: none;
   background: transparent;
   cursor: pointer;
@@ -121,7 +122,7 @@ export const SubscribeButton = styled.button`
 
   &:focus-visible {
     outline: 2px solid ${colors.white};
-    outline-offset: -2px;
+    outline-offset: -${space[2]};
   }
 `
 

@@ -1,10 +1,11 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { space } from '../../styles/spacing'
 
 export const Button = styled.button`
   position: absolute;
-  top: 6px;
-  right: 6px;
+  top: ${space[6]};
+  right: ${space[6]};
   z-index: 1;
   width: 28px;
   height: 28px;
@@ -19,7 +20,7 @@ export const Button = styled.button`
 
   &:focus-visible {
     outline: 2px solid ${colors.neutral800};
-    outline-offset: 2px;
+    outline-offset: ${space[2]};
   }
 
   img {

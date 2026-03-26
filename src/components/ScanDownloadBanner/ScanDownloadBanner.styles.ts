@@ -1,9 +1,10 @@
 import styled from '@emotion/styled'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Section = styled.section`
-  margin-top: 8px;
-  margin-bottom: 24px;
+  margin-top: ${space[8]};
+  margin-bottom: ${space[24]};
 `
 
 export const Band = styled.div`
@@ -28,7 +29,7 @@ export const LeftQuarter = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: ${space[8]};
   box-sizing: border-box;
 `
 
@@ -42,8 +43,8 @@ export const WhiteCard = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 10px 6px 12px;
-  gap: 10px;
+  padding: ${space[10]} ${space[6]} ${space[12]};
+  gap: ${space[10]};
 `
 
 export const ScanText = styled.p`
@@ -74,12 +75,12 @@ export const MiddleHalf = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 12px 20px;
+  padding: ${space[12]} ${space[20]};
   box-sizing: border-box;
 `
 
 export const Headline = styled.h2`
-  margin: 0 0 12px;
+  margin: 0 0 ${space[12]};
   color: #000;
   font-family: ${FONT_FAMILY};
   font-size: 36px;

@@ -1,14 +1,15 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Section = styled.section`
-  margin-top: 8px;
-  margin-bottom: 24px;
+  margin-top: ${space[8]};
+  margin-bottom: ${space[24]};
 `
 
 export const Title = styled.h2`
-  margin: 0 0 16px;
+  margin: 0 0 ${space[16]};
   color: ${colors.black};
   font-family: ${FONT_FAMILY};
   font-size: 20px;
@@ -20,7 +21,7 @@ export const Title = styled.h2`
 export const Grid = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: ${space[16]};
 `
 
 export const BrandTile = styled.img`

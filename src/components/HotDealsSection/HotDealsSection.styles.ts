@@ -1,9 +1,10 @@
 import styled from '@emotion/styled'
+import { space } from '../../styles/spacing'
 
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: ${space[16]};
   align-items: flex-start;
 `

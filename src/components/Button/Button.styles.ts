@@ -1,12 +1,13 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Root = styled.button`
   box-sizing: border-box;
   width: 155px;
   height: 32px;
-  padding: 0 10px;
+  padding: 0 ${space[10]};
   margin: 0;
   border: 1px solid ${colors.black};
   border-radius: 23px;
@@ -27,7 +28,7 @@ export const Root = styled.button`
 
   &:focus-visible {
     outline: 2px solid ${colors.neutral800};
-    outline-offset: 2px;
+    outline-offset: ${space[2]};
   }
 
   &:disabled {

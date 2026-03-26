@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 import { Section as HeroSection } from '../HomeHero/HomeHero.styles'
 
@@ -15,7 +16,7 @@ export const BenefitPanel = styled.div`
   height: 326px;
   border-radius: 17px;
   background: #e7faf8;
-  padding: 32px 36px;
+  padding: ${space[32]} ${space[36]};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -26,7 +27,7 @@ export const BenefitRow = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 20px;
+  gap: ${space[20]};
 `
 
 export const SearchIcon = styled.img`
@@ -41,7 +42,7 @@ export const BenefitText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 6px;
+  gap: ${space[6]};
   min-width: 0;
 `
 

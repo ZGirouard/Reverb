@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Row = styled.div`
@@ -8,17 +9,17 @@ export const Row = styled.div`
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: ${space[12]};
   width: 100%;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: ${space[12]};
 `
 
 export const Left = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
+  gap: ${space[4]};
   min-width: 0;
 `
 

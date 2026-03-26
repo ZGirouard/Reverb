@@ -1,11 +1,12 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Nav = styled.nav`
   display: flex;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-bottom: ${space[16]};
 `
 
 export const List = styled.div`
@@ -13,13 +14,13 @@ export const List = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: ${space[8]};
 `
 
 const paginationFocus = `
   &:focus-visible {
     outline: 2px solid ${colors.black};
-    outline-offset: 2px;
+    outline-offset: ${space[2]};
   }
 `
 
@@ -64,6 +65,6 @@ export const EllipsisCircle = styled.span`
 
 export const NextPill = styled(PaginationControlButton)`
   height: 30px;
-  padding: 0 14px;
+  padding: 0 ${space[14]};
   border-radius: 18px;
 `

@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { space } from '../../styles/spacing'
 
 export const Root = styled.footer`
   box-sizing: border-box;
@@ -21,7 +22,7 @@ export const TopSlot = styled.div`
   box-sizing: border-box;
   min-width: 0;
   height: 100%;
-  padding: 16px 16px;
+  padding: ${space[16]} ${space[16]};
 `
 
 export const FooterBottom = styled.div`
@@ -30,7 +31,7 @@ export const FooterBottom = styled.div`
   background: ${colors.neutral950};
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-gap: 32px;
+  column-gap: ${space[32]};
 `
 
 export const BottomSlot = styled.div`
@@ -39,5 +40,5 @@ export const BottomSlot = styled.div`
   min-width: 0;
   height: 100%;
   align-items: center;
-  padding: 16px;
+  padding: ${space[16]};
 `

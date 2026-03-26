@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Field = styled.div`
@@ -17,7 +18,7 @@ export const Input = styled.input`
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0 38px 0 12px;
+  padding: 0 ${space[40]} 0 ${space[12]};
   border: none;
   border-radius: 9px;
   background: transparent;
@@ -43,7 +44,7 @@ export const Input = styled.input`
 export const IconWrap = styled.span`
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: ${space[10]};
   transform: translateY(-50%);
   display: flex;
   align-items: center;

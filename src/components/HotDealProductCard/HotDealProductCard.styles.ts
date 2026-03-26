@@ -1,10 +1,10 @@
 import styled from '@emotion/styled'
 import FavoriteButton from '../FavoriteButton/FavoriteButton'
 import { coverImageBackground } from '../../styles/cssUtils'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 const card = 146
-const favInset = 6
 const imgR = 14
 
 export const Root = styled.article`
@@ -14,7 +14,7 @@ export const Root = styled.article`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 6px;
+  gap: ${space[6]};
 `
 
 export const ImageBlock = styled.div`
@@ -34,8 +34,8 @@ export const ImageArea = styled.div<{ $imageSrc: string }>`
 
 export const FavoriteTopRight = styled(FavoriteButton)`
   position: absolute;
-  top: ${favInset}px;
-  right: ${favInset}px;
+  top: ${space[6]};
+  right: ${space[6]};
   left: auto;
   z-index: 1;
 `
@@ -69,7 +69,7 @@ export const ProductTitle = styled.h3`
 export const Pricing = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: ${space[4]};
   width: 100%;
 `
 
@@ -78,7 +78,7 @@ export const WasRow = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 6px;
+  gap: ${space[6]};
 `
 
 export const WasPrice = styled.span`

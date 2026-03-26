@@ -1,12 +1,13 @@
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const root = css`
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: ${space[8]};
 `
 
 export const IconContainer = styled.div`

@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 import { Root as BaseButton } from '../Button/Button.styles'
 
@@ -7,7 +8,7 @@ export const BottomAppColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: ${space[12]};
 `
 
 export const SocialRow = styled.div`
@@ -16,7 +17,7 @@ export const SocialRow = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: ${space[12]};
 `
 
 export const SocialIconLink = styled.a`
@@ -40,7 +41,7 @@ export const SocialIconLink = styled.a`
 
   &:focus-visible {
     outline: 2px solid ${colors.white};
-    outline-offset: 2px;
+    outline-offset: ${space[2]};
     border-radius: 2px;
   }
 `
@@ -48,14 +49,14 @@ export const SocialIconLink = styled.a`
 export const DownloadAppButton = styled(BaseButton)`
   width: auto;
   max-width: none;
-  padding: 0 14px;
+  padding: 0 ${space[14]};
   border: 1px solid ${colors.white};
   background: transparent;
   color: ${colors.white};
 
   &:focus-visible {
     outline: 2px solid ${colors.white};
-    outline-offset: 2px;
+    outline-offset: ${space[2]};
   }
 
   &:hover {
@@ -67,7 +68,7 @@ export const BottomFirstColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: ${space[12]};
 `
 
 export const LocalePill = styled.div`
@@ -89,7 +90,7 @@ export const LocaleSegment = styled.button`
   min-width: 0;
   height: 100%;
   margin: 0;
-  padding: 0 6px;
+  padding: 0 ${space[6]};
   border: none;
   background: transparent;
   cursor: pointer;
@@ -105,7 +106,7 @@ export const LocaleSegment = styled.button`
 
   &:focus-visible {
     outline: 2px solid ${colors.white};
-    outline-offset: -2px;
+    outline-offset: -${space[2]};
   }
 `
 

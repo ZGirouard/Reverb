@@ -1,16 +1,17 @@
 import styled from '@emotion/styled'
 import FavoriteButton from '../FavoriteButton/FavoriteButton'
 import { coverImageBackground } from '../../styles/cssUtils'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export type CardSize = 'default' | 'large'
 
 const DIM: Record<
   CardSize,
-  { card: number; plateW: number; plateH: number; font: number; imgR: number; plateR: number; favInset: number }
+  { card: number; plateW: number; plateH: number; font: number; imgR: number; plateR: number }
 > = {
-  default: { card: 146, plateW: 122, plateH: 44, font: 13, imgR: 14, plateR: 15, favInset: 6 },
-  large: { card: 300, plateW: 251, plateH: 90, font: 27, imgR: 29, plateR: 31, favInset: 12 },
+  default: { card: 146, plateW: 122, plateH: 44, font: 13, imgR: 14, plateR: 15 },
+  large: { card: 300, plateW: 251, plateH: 90, font: 27, imgR: 29, plateR: 31 },
 }
 
 export const Root = styled.article<{ $size: CardSize }>`
@@ -30,8 +31,8 @@ export const ImageArea = styled.div<{ $imageSrc: string; $size: CardSize }>`
 `
 
 export const FavoriteTopRight = styled(FavoriteButton)<{ $size: CardSize }>`
-  top: ${({ $size }) => DIM[$size].favInset}px;
-  right: ${({ $size }) => DIM[$size].favInset}px;
+  top: ${({ $size }) => ($size === 'large' ? space[12] : space[6])};
+  right: ${({ $size }) => ($size === 'large' ? space[12] : space[6])};
   left: auto;
   z-index: 2;
 `
@@ -42,7 +43,8 @@ export const NameOverlay = styled.div<{ $size: CardSize }>`
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  padding: 0 0 ${({ $size }) => DIM[$size].favInset}px ${({ $size }) => DIM[$size].favInset}px;
+  padding: 0 0 ${({ $size }) => ($size === 'large' ? space[12] : space[6])} ${({ $size }) =>
+    $size === 'large' ? space[12] : space[6]};
   box-sizing: border-box;
   z-index: 1;
   pointer-events: none;
@@ -57,7 +59,7 @@ export const NamePlate = styled.div<{ $size: CardSize }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 8px;
+  padding: 0 ${space[8]};
 `
 
 export const PillStack = styled.div`
@@ -65,7 +67,7 @@ export const PillStack = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 2px;
+  gap: ${space[2]};
   width: 100%;
   min-width: 0;
 `

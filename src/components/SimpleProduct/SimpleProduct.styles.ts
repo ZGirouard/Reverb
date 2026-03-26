@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import { coverImageBackground } from '../../styles/cssUtils'
 import { colors } from '../../styles/colors'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Root = styled.article`
@@ -21,7 +22,7 @@ export const Caption = styled.div`
   width: 143px;
   min-height: 78px;
   height: 78px;
-  padding: 8px 10px;
+  padding: ${space[8]} ${space[10]};
   border-radius: 0 0 14px 14px;
   background: ${colors.white};
   display: flex;

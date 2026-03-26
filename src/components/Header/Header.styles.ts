@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { space } from '../../styles/spacing'
 import { Root as BaseButton } from '../Button/Button.styles'
 
 export const Root = styled.header`
@@ -14,9 +15,9 @@ export const TopRow = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8px;
+  gap: ${space[8]};
   width: 100%;
-  padding: 8px 8px;
+  padding: ${space[8]} ${space[8]};
 `
 
 export const Logo = styled.img`
@@ -29,7 +30,7 @@ export const Logo = styled.img`
 export const SellGearButton = styled(BaseButton)`
   width: auto;
   max-width: none;
-  padding: 0 14px;
+  padding: 0 ${space[14]};
 `
 
 export const Divider = styled.hr`
@@ -46,7 +47,7 @@ export const NavRow = styled.nav`
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8px;
+  gap: ${space[8]};
   width: 100%;
-  padding: 8px 8px;
+  padding: ${space[8]} ${space[8]};
 `

@@ -1,10 +1,11 @@
 import styled from '@emotion/styled'
 import { colors } from '../styles/colors'
 import { FiveColumnGrid } from '../styles/shared.styles'
+import { space } from '../styles/spacing'
 import { FONT_FAMILY } from '../styles/tokens'
 
 export const CategoryTitle = styled.h1`
-  margin: 16px 0 12px;
+  margin: ${space[16]} ${space[0]} ${space[12]};
   width: 100%;
   text-align: left;
   color: ${colors.black};
@@ -17,5 +18,5 @@ export const CategoryTitle = styled.h1`
 
 export const List = styled(FiveColumnGrid)`
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: ${space[16]};
 `

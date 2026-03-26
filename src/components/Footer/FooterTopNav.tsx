@@ -1,4 +1,5 @@
 import React from 'react'
+import { space } from '../../styles/spacing'
 import {
   Column,
   EmailField,
@@ -99,7 +100,7 @@ export function FooterTopNavColumn4() {
 export function FooterTopNavColumn5() {
   return (
     <section aria-label="Email newsletter signup">
-      <Section style={{ marginLeft: '-32px' }}>
+      <Section style={{ marginLeft: `-${space[32]}` }}>
         <SectionTitle>Get the Best of Reverb in Your
         Inbox</SectionTitle>
         <SubscribeBar>

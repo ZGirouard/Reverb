@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import FavoriteButton from '../FavoriteButton/FavoriteButton'
 import { coverImageBackground } from '../../styles/cssUtils'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 const CARD_W = 308
@@ -27,15 +28,15 @@ export const Header = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
-  padding: 8px 8px 8px 12px;
+  gap: ${space[8]};
+  padding: ${space[8]} ${space[8]} ${space[8]} ${space[12]};
 `
 
 export const HeaderMain = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 8px;
+  gap: ${space[8]};
   min-width: 0;
 `
 
@@ -44,7 +45,7 @@ export const SearchIcon = styled.img`
   height: 13px;
   display: block;
   flex-shrink: 0;
-  margin-top: 1px;
+  margin-top: ${space[1]};
   object-fit: contain;
 `
 
@@ -52,7 +53,7 @@ export const HeaderText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 2px;
+  gap: ${space[2]};
   min-width: 0;
 `
 
@@ -88,8 +89,8 @@ export const ImageRow = styled.div`
 `
 
 export const ThumbDivider = styled.div`
-  flex: 0 0 2px;
-  width: 2px;
+  flex: 0 0 ${space[2]};
+  width: ${space[2]};
   height: 153px;
   background: #fff;
 `

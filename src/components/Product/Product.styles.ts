@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
 import { CardColumnStack } from '../../styles/shared.styles'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 export const Root = styled(CardColumnStack)``
@@ -16,7 +17,7 @@ export const TagsRow = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 4px;
+  gap: ${space[4]};
 `
 
 export const GreatValueTag = styled.span`

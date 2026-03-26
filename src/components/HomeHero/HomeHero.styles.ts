@@ -1,6 +1,7 @@
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 import { colors } from '../../styles/colors'
+import { space } from '../../styles/spacing'
 import { FONT_FAMILY } from '../../styles/tokens'
 
 const HERO_IMAGE = '/heroBackground.png'
@@ -9,9 +10,9 @@ export const Section = styled.section`
   box-sizing: border-box;
   width: 100%;
   min-height: 320px;
-  margin-top: 16px;
-  margin-bottom: 24px;
-  padding: 32px 24px;
+  margin-top: ${space[16]};
+  margin-bottom: ${space[24]};
+  padding: ${space[32]} ${space[24]};
   background: url(${JSON.stringify(HERO_IMAGE)}) ${colors.imagePlaceholder} 50% / cover no-repeat;
   border-radius: 14px;
   overflow: hidden;
@@ -32,7 +33,7 @@ export const Left = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: ${space[16]};
 `
 
 export const heroTitleStyles = css`
@@ -67,8 +68,8 @@ export const Subtitle = styled.p`
 `
 
 export const SignUpButton = styled.button`
-  margin-top: 8px;
-  padding: 12px 28px;
+  margin-top: ${space[8]};
+  padding: ${space[12]} ${space[28]};
   border: none;
   border-radius: 999px;
   background: ${colors.black};
@@ -82,7 +83,7 @@ export const SignUpButton = styled.button`
 
   &:focus-visible {
     outline: 2px solid ${colors.neutral800};
-    outline-offset: 3px;
+    outline-offset: ${space[4]};
   }
 `
 
@@ -90,6 +91,6 @@ export const ProductsColumn = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  gap: 16px;
+  gap: ${space[16]};
   flex-shrink: 0;
 `

@@ -1,11 +1,12 @@
 import styled from '@emotion/styled'
+import { space } from '../../styles/spacing'
 import { HeaderTextParagraph } from '../HeaderText/HeaderText.styles'
 
 export const Root = styled.div`
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: ${space[4]};
 `
 
 export const IconWrap = styled.span`
