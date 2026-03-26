@@ -6,6 +6,7 @@ import BrowseByCategorySection from '../components/BrowseByCategorySection/Brows
 import ScanDownloadBanner from '../components/ScanDownloadBanner/ScanDownloadBanner'
 import JustListedSection from '../components/JustListedSection/JustListedSection'
 import MostWatchedElectricGuitarsSection from '../components/MostWatchedElectricGuitarsSection/MostWatchedElectricGuitarsSection'
+import YourRecentSearchesSection from '../components/YourRecentSearchesSection/YourRecentSearchesSection'
 import RecentlyViewedSection from '../components/RecentlyViewedSection/RecentlyViewedSection'
 import SellGearSection from '../components/SellGearSection/SellGearSection'
 import TopBrandsSection from '../components/TopBrandsSection/TopBrandsSection'
@@ -19,6 +20,7 @@ export default function Home() {
       <TopBrandsSection />
       <RecentlyViewedSection />
       <MostWatchedElectricGuitarsSection />
+      <YourRecentSearchesSection />
       <SellGearSection />
       <HotDealsSection />
       <JustListedSection />
