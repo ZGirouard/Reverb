@@ -51,7 +51,6 @@ export const Title = styled.h1`
   ${heroTitleStyles}
 `
 
-/** Same typography as {@link Title}; use for secondary page bands (single h1 per page). */
 export const SectionTitle = styled.h2`
   ${heroTitleStyles}
 `

@@ -1,7 +1,3 @@
-/**
- * Spacing scale for margin, padding, gap, and inset offsets (px).
- * When migrating legacy values, snap to the nearest token (e.g. 3 → 4, 9 → 8).
- */
 export const space = {
   0: '0',
   1: '1px',

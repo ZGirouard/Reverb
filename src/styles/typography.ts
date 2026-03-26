@@ -1,6 +1,3 @@
-/**
- * Typography scale. Use semantic sizes; legacy px values snap to the nearest step.
- */
 export const fontSize = {
   micro: '8px',
   caption2: '9px',
@@ -12,7 +9,6 @@ export const fontSize = {
   bodyXL: '15px',
   titleSm: '20px',
   titleMd: '24px',
-  /** Was 27px on large SmallProductCard — rounded to 28 */
   titleLg: '28px',
   displaySm: '36px',
   displayMd: '40px',
@@ -30,6 +26,5 @@ export const lineHeight = {
   normal: 'normal',
   tight: 1,
   snug: 1.25,
-  /** Pagination numeral cap height */
   controlMd: '30px',
 } as const
